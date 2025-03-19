@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT customers (customer*)>
+<!ELEMENT customer (cname,email,phone)>
+<!ATTLIST customer cid CDATA #REQUIRED
+           city  CDATA #REQUIRED >
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>

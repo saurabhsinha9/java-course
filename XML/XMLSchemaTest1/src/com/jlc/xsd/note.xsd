@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				   targetNamespace="http://jlcindia.com"
+                   xmlns="http://www.w3schools.com"
+                   elementFormDefault="qualified">
+<!-- note element is a complex type because it contains other elements. 
+The other elements (to, from, heading, body) are simple types because they do not contain other elements.  -->
+<xs:element name="note">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="to" type="xs:string"/>
+      <xs:element name="from" type="xs:string"/>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element name="body" type="xs:string"/>
+      
+      <xs:element name="color" type="xs:string" default="red"/>
+      <xs:element name="color1" type="xs:string" fixed="green"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

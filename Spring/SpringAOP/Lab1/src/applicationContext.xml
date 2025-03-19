@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<context:annotation-config/>
+		
+	<bean id="ls" class="com.jlcindia.spring.aop.LogService"/>
+	<bean id="ss" class="com.jlcindia.spring.aop.SecurityService"/>
+	
+	<bean id="mba" class="com.jlcindia.spring.aop.JLCMBAdvice"/>
+	<bean id="mra" class="com.jlcindia.spring.aop.JLCMRAdvice"/>
+	<bean id="mta" class="com.jlcindia.spring.aop.JLCMTAdvice"/>
+	
+	<bean id="helloTarget" class="com.jlcindia.spring.aop.HelloService"/>
+	<bean id="haiTarget" class="com.jlcindia.spring.aop.HaiServiceImpl"/>
+	
+	<bean id="baseProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="interceptorNames">
+	<list>
+	<value>mba</value>
+	<value>mra</value>
+	<value>mta</value>
+	</list>
+	</property>
+	</bean>
+	
+	<bean id="helloProxy" parent="baseProxy">
+	<property name="targetClass" value="com.jlcindia.spring.aop.HelloService"/>
+	<property name="target" ref="helloTarget"/>
+	</bean>
+	<bean id="haiProxy" parent="baseProxy">
+	<property name="proxyInterfaces" value="com.jlcindia.spring.aop.HaiService"/>
+	<property name="target" ref="haiTarget"/>
+	</bean>
+	
+</beans>

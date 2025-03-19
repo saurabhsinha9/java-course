@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+.textStyle{
+font-family:sans-serif,Arial,Verdana;
+}
+.loginLabel{
+font-family:sans-serif,Arial,Verdana;
+font-size:18px;
+font-weight:bolder;
+}
+.error
+{
+font-family:sans-serif,Arial,Verdana;
+font-size:15px;
+font-weight:bolder;
+color:red;
+}
+.button
+	{
+	font-family:Verdana;
+font-size:15px;
+font-weight:bolder;
+}
+.submitLink
+	{
+	background-color:transparent;
+	text-deccoration:underline;
+	border:none;
+	cursor:pointer;
+	cursor:hand;
+	}
+.questionHeading
+	{
+	font-family:Verdana;
+font-size:15px;
+font-weight:bolder;
+	
+	}
+	
+	

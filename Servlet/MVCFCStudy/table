@@ -1,0 +1,6 @@
+create table users(
+firstname char(15),
+lastname char(15),
+email char(30),
+username char(15),
+password char(15));

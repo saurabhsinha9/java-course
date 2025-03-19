@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+<data-sources/>
+
+	<form-beans>
+	<form-bean name="regForm"
+			   type="com.jlcindia.struts1.RegisterForm"/>
+	</form-beans>
+
+ 	<global-exceptions/>
+ 	
+ 	<global-forwards>
+	 <forward name="register" path="/register.jsp"/>
+	 <forward name="home" path="/home.jsp"/>
+ 	</global-forwards> 
+ 	
+	 <action-mappings>
+		 <action path="/RegisterSubmit"
+		 		 name="regForm"
+		 		 type="com.jlcindia.struts1.RegisterAction"
+		 		 validate="true"
+		 		 input="/register.jsp"/>
+	 </action-mappings>
+ 
+	<message-resources parameter="com.jlcindia.struts1.Application" />
+  
+</struts-config>
+

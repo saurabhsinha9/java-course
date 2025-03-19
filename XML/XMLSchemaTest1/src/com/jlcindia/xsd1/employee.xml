@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:employee xmlns:p="http://www.example.org/employee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/employee employee.xsd ">
+  <p:firstname>p:firstname</p:firstname>
+  <p:lastname>p:lastname</p:lastname>
+</p:employee>

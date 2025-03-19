@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Ant-Test" default="javadoc" basedir=".">
+	<!-- Sets variables which can later be used. -->
+	<!-- The value of a property is accessed via ${} -->
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="build" />
+	<property name="dist.dir" location="dist" />
+	<property name="docs.dir" location="docs" />
+
+	<!-- Deletes the existing build, docs and dist directory-->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${docs.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+
+	<!-- Creates the  build, docs and dist directory-->
+	<target name="makedir">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${docs.dir}" />
+		<mkdir dir="${dist.dir}" />
+	</target>
+
+	<!-- Compiles the java code (including the usage of library for JUnit -->
+	<target name="compile" depends="clean, makedir">
+		<javac srcdir="${src.dir}" destdir="${build.dir}">
+		</javac>
+
+	</target>
+
+
+	<!--Creates the deployable jar file  -->
+	<target name="jar" depends="compile">
+		<jar destfile="${dist.dir}\maths.jar" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="com.jlcindia.test.AntTest" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="main" depends="compile, jar">
+		<description>Main target</description>
+	</target>
+	
+	<target name="javadoc" depends="main">
+		
+		<javadoc
+		           destdir="docs/api"
+		           author="true"
+		  >
+
+		    <fileset dir="src" defaultexcludes="yes">
+		      <include name="com/jlcindia/test/**"/>
+		      
+		    </fileset>
+
+		    <doctitle><![CDATA[<h1>Test</h1>]]></doctitle>
+		    <bottom><![CDATA[<i>Copyright &#169; 2000 Dummy Corp. All Rights Reserved.</i>]]></bottom>
+		    <tag name="todo" scope="all" description="To do:"/>
+		    <group title="Group 1 Packages" packages="com.jlcindia.test.*"/>
+		    <link offline="true" href="http://download.oracle.com/javase/6/docs/api/" packagelistLoc="C:\tmp"/>
+		    <link href="http://developer.java.sun.com/developer/products/xml/docs/api/"/>
+		  </javadoc>
+		</target>
+
+</project> 

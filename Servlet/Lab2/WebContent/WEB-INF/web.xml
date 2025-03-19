@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Lab2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <context-param>
+    <param-name>state</param-name>
+    <param-value>Karnatka</param-value>
+    </context-param>
+    <context-param>
+    <param-name>country</param-name>
+    <param-value>India</param-value>
+    </context-param>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.jlcindia.servlets.TestServlet</servlet-class>
+    <init-param>
+    <param-name>phone</param-name>
+    <param-value>9999</param-value>
+    </init-param>
+    <init-param>
+    <param-name>email</param-name>
+    <param-value>sau@jlc.com</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test.jlc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>demo</servlet-name>
+    <servlet-class>com.jlcindia.servlets.DemoServlet</servlet-class>
+    <init-param>
+    <param-name>phone</param-name>
+    <param-value>1111</param-value>
+    </init-param>
+    <init-param>
+    <param-name>email</param-name>
+    <param-value>saurabh@gmail.com</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>demo</servlet-name>
+    <url-pattern>/demo.jlc</url-pattern>
+  </servlet-mapping>
+</web-app>

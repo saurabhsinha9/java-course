@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://hello.axis2.jlcindia.com" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://hello.axis2.jlcindia.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://hello.axis2.jlcindia.com">
+            <xs:element name="getMessage">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getMessageResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getMessageRequest">
+    <wsdl:part name="parameters" element="ns:getMessage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMessageResponse">
+    <wsdl:part name="parameters" element="ns:getMessageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="HelloPortType">
+    <wsdl:operation name="getMessage">
+      <wsdl:input message="ns:getMessageRequest" wsaw:Action="urn:getMessage">
+    </wsdl:input>
+      <wsdl:output message="ns:getMessageResponse" wsaw:Action="urn:getMessageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloSoap12Binding" type="ns:HelloPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMessage">
+      <soap12:operation soapAction="urn:getMessage" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HelloSoap11Binding" type="ns:HelloPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMessage">
+      <soap:operation soapAction="urn:getMessage" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HelloHttpBinding" type="ns:HelloPortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getMessage">
+      <http:operation location="Hello/getMessage"/>
+      <wsdl:input>
+        <mime:content part="getMessage" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getMessage" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Hello">
+    <wsdl:port name="HelloHttpSoap12Endpoint" binding="ns:HelloSoap12Binding">
+      <soap12:address location="http://localhost:9999/Lab8/services/Hello.HelloHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="HelloHttpEndpoint" binding="ns:HelloHttpBinding">
+      <http:address location="http://localhost:9999/Lab8/services/Hello.HelloHttpEndpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="HelloHttpSoap11Endpoint" binding="ns:HelloSoap11Binding">
+      <soap:address location="http://localhost:9999/Lab8/services/Hello.HelloHttpSoap11Endpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

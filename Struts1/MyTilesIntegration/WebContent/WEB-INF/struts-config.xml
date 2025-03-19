@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean  name="loginForm" type="com.jlcindia.struts1.LoginForm" />
+	</form-beans>
+	
+	<global-forwards>
+	    <forward name="login" path="/loginHome.jsp" />
+		<forward name="home" path="/successhome.jsp" />
+	    
+	</global-forwards>
+	<action-mappings>
+		<action path="/LoginSubmit" 
+				name="loginForm"
+				type="com.jlcindia.struts1.LoginAction" 
+				scope="request" 
+				input="/loginHome.jsp">
+			
+		<forward name="login" path="/loginHome.jsp" />
+		</action>
+	</action-mappings>
+	
+	<message-resources parameter="com.jlcindia.struts1.Application" />
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles.xml"/>
+	</plug-in>
+  
+  
+</struts-config>
+

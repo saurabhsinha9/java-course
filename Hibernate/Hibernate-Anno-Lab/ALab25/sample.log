@@ -1,0 +1,529 @@
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Reading mappings from resource : com/jlcindia/hibernate/Customer.hbm.xml
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table customers
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table customers
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table customers
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table customers
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, dob, email, cid, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.orders
+INFO -  columns: [totalcost, orderid, status, cid, orderdate, totalqty]
+INFO -  foreign keys: [fkc3df62e5ebde1263]
+INFO -  indexes: [primary, fkc3df62e5ebde1263]
+INFO -  schema update complete
+WARN -  SQL Error: 1364, SQLState: S1000
+ERROR -  General error,  message from server: "Field 'orderId' doesn't have a default value"
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, dob, email, cid, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.orders
+INFO -  columns: [totalcost, orderid, status, cid, totalqty, orderdate]
+INFO -  foreign keys: [fkc3df62e5ebde1263]
+INFO -  indexes: [primary, fkc3df62e5ebde1263]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, dob, email, cid, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.orders
+INFO -  columns: [totalcost, orderid, status, cid, totalqty, orderdate]
+INFO -  foreign keys: [fkc3df62e5ebde1263]
+INFO -  indexes: [primary, fkc3df62e5ebde1263]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Customer
+INFO -  Bind entity com.jlcindia.hibernate.Customer on table customers
+INFO -  Binding entity from annotated class: com.jlcindia.hibernate.Order
+INFO -  Bind entity com.jlcindia.hibernate.Order on table orders
+INFO -  Mapping collection: com.jlcindia.hibernate.Customer.orders -> orders
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, dob, email, cid, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.orders
+INFO -  columns: [totalcost, orderid, status, cid, totalqty, orderdate]
+INFO -  foreign keys: [fkc3df62e5ebde1263]
+INFO -  indexes: [primary, fkc3df62e5ebde1263]
+INFO -  schema update complete

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Lab8</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>addcart</servlet-name>
+    <servlet-class>com.jlcindia.bookstore.servlets.AddToCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addcart</servlet-name>
+    <url-pattern>/addcart.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>removecart</servlet-name>
+    <servlet-class>com.jlcindia.bookstore.servlets.RemoveFromCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>removecart</servlet-name>
+    <url-pattern>/removecart.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>showcart</servlet-name>
+    <servlet-class>com.jlcindia.bookstore.servlets.ShowCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showcart</servlet-name>
+    <url-pattern>/showcart.jlc</url-pattern>
+  </servlet-mapping>
+</web-app>

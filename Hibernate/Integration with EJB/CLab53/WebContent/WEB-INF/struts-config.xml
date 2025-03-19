@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+<data-sources/>
+  <form-beans>
+		<form-bean  name="loginForm" type="org.apache.struts.action.DynaActionForm" >
+		<form-property name="username" type="java.lang.String"/>
+		<form-property name="password" type="java.lang.String"/>
+		</form-bean>
+		<form-bean  name="registerForm" type="org.apache.struts.action.DynaActionForm" >
+		<form-property name="fname" type="java.lang.String"/>
+		<form-property name="lname" type="java.lang.String"/>
+		<form-property name="email" type="java.lang.String"/>
+		<form-property name="username" type="java.lang.String"/>
+		<form-property name="password" type="java.lang.String"/>
+		</form-bean>
+	</form-beans>
+	<global-exceptions/>
+	<global-forwards>
+		<forward name="register" path="/register.jsp"/>
+		<forward name="index" path="/index.jsp"/>
+		<forward name="home" path="/home.jsp"/>	
+	</global-forwards>
+	<action-mappings>
+		<action path="/LoginSubmit" 
+				name="loginForm"
+				parameter="method"
+				type="com.jlcindia.struts.UserAction"
+				input="/index.jsp"/> 
+		
+		<action path="/RegisterSubmit" 
+				name="registerForm"
+				parameter="method"
+				type="com.jlcindia.struts.UserAction"
+				input="/register.jsp"/>
+	</action-mappings>
+	<message-resources parameter="com.jlcindia.struts.ApplicationResources"/>
+</struts-config>
+

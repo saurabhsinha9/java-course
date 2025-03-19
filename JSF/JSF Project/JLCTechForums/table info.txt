@@ -1,0 +1,5 @@
+create database jlctechforumdb;
+use jlctechforumdb;
+create table users (userId int primary key,fullname char(20),email char(20),username char(20),password char(20));
+create table query(queryId int primary key auto_increment,subject char(20),author char(20),postDate char(15),catName char(20),description text);
+create table category(catId int primary key auto_increment,catName char(20));

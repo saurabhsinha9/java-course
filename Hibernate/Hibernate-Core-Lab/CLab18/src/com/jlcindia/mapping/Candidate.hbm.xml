@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bean" default-lazy="false">
+<class name="Candidate" table="candidates">
+<id name="cid" column="cid" type="int">
+<generator class="increment"/>
+</id>
+<property name="fname"/>
+<property name="lname"/>
+<list name="emails" table="emails">
+<key column="cid"/>
+<index/>
+<element column="email" type="string"/>
+</list>
+<property name="qualification"/>
+<property name="dob"/>
+
+<joined-subclass name="FreshCandidate" table="fcandidates">
+<key column="cid"/>
+<property name="yop" type="int"/>
+<map name="percentages" table="percentages">
+<key column="cid"/>
+<index column="quali" type="string"/>
+<element column="percent" type="double"/>
+</map>
+<property name="yearGaps"/>
+</joined-subclass>
+
+<joined-subclass name="ExpCandidate" table="ecandidates">
+<key column="cid"/>
+<property name="yoe" type="int"/>
+
+<set name="skills" table="skills">
+<key column="cid"/>
+<element column="skill" type="string"/>
+</set>
+
+<list name="companies" table="companies">
+<key column="cid"/>
+<index/>
+<element column="company" type="string"/>
+</list>
+<property name="ctc" type="double"/>
+</joined-subclass>
+</class>
+</hibernate-mapping>

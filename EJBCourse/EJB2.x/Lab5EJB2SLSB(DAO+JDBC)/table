@@ -1,0 +1,14 @@
+create table jlcbooks(
+bookId char(6) primary key,
+bookName char(15),
+author char(15),
+pub char(15),
+isbn char(15),
+cost double,
+cat char(15),
+qty int);
+
+ insert into jlcbooks values('1','Java','Sri','JLC','12-13',500.0,'java',1);
+  insert into jlcbooks values('2','JSP','Sri','JLC','12-14',550.0,'java',2);
+  insert into jlcbooks values('3','JSP','Sri','JLC','12-24',520.0,'java',1);
+  insert into jlcbooks values('4','EJB','Sri','JLC','13-24',620.0,'java',1);

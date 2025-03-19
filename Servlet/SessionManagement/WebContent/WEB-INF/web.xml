@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SessionManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TestCookie</display-name>
+    <servlet-name>TestCookie</servlet-name>
+    <servlet-class>com.mypkg.session.TestCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestCookie</servlet-name>
+    <url-pattern>/testcookie.sau</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestSession</display-name>
+    <servlet-name>TestSession</servlet-name>
+    <servlet-class>com.mypkg.session.TestSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestSession</servlet-name>
+    <url-pattern>/testsession.sau</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  <session-timeout>10</session-timeout>
+  </session-config>
+</web-app>

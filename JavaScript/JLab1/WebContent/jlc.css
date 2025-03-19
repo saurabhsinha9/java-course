@@ -1,0 +1,18 @@
+table.clock{
+	text-align: center;
+	border: thin dotted red; 
+	padding: 5px;
+	margin: auto;
+}
+
+table.win{
+	text-align: center;
+	border: thin dotted green; 
+	padding: 5px;
+	margin: auto;
+}
+
+.button{
+	font-size: 20px;
+	color: red;
+}

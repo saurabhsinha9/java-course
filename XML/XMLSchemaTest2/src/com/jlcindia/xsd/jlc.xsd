@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			elementFormDefault="qualified">
+
+<xs:element name="jlc">
+ <xs:complexType>
+<xs:sequence>
+<xs:element ref="student" minOccurs="2" maxOccurs="3" />
+</xs:sequence>
+</xs:complexType>
+    </xs:element>
+
+<!-- Define Complex type -->
+<xs:element name="student">
+
+        <xs:complexType>
+<xs:sequence>
+<xs:element ref="sname" />
+<xs:element ref="email" minOccurs="0" maxOccurs="1" />
+<xs:element ref="phone" maxOccurs="1" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<!-- Define simple type -->
+<xs:element name="sname" type="xs:string" />
+<xs:element name="email" type="xs:string" />
+<xs:element name="phone" type="xs:long" />
+</xs:schema>

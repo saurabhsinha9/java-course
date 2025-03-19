@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<form-beans>
+	<form-bean name="tbean"
+				type="org.apache.struts.action.DynaActionForm"/>
+	<form-bean name="loginForm"
+				type="com.jlcindia.struts1.LoginForm">
+	</form-bean>
+  </form-beans>
+  
+  <global-forwards>
+  	<forward name="login" path="/login.jsp"/>
+  	<forward name="home" path="/home.jsp"/>	
+  	<forward name="english" path="/ChangeLocale.do?language=en"/>
+  	<forward name="hindi" path="/ChangeLocale.do?language=hi"/>
+  	<forward name="kannada" path="/ChangeLocale.do?language=kn"/>
+  	<forward name="telugu" path="/ChangeLocale.do?language=te"/>
+  	<forward name="tamil" path="/ChangeLocale.do?language=ta"/>
+  </global-forwards>
+  
+  <action-mappings>
+  	
+  	<action path="/ChangeLocale"
+  			name="tbean"
+  			type="com.jlcindia.struts1.LocaleAction"
+  			scope="request"
+  			input="/login.jsp">		
+  	</action>
+  	
+  	<action path="/LoginSubmit"
+  			name="loginForm"
+  			type="com.jlcindia.struts1.LoginAction"
+  			scope="request"
+  			input="/login.jsp">	
+  	</action>
+  
+  </action-mappings>
+  <message-resources parameter="com.jlcindia.struts1.Application"/>
+  
+</struts-config>
+

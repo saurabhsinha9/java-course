@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<context:annotation-config/>
+	
+	<bean id="hello1" class="com.jlcindia.spring3.ioc.Hello">
+	<property name="a" value="99"/>
+	<property name="str">
+	<value>Hello Guys1</value>
+	</property>
+	</bean>
+	
+	<bean id="hello2" class="com.jlcindia.spring3.ioc.Hello" p:a="88" p:str="Hello Guys2"/>
+	
+	<bean id="hai" class="com.jlcindia.spring3.ioc.Hai" >
+	<constructor-arg value="10"/>
+	<constructor-arg value="Hai with Cons Injection"/>
+	</bean>
+	
+	<bean id="aobj" class="com.jlcindia.spring3.ioc.A"/>
+	
+	<bean id="bobj" class="com.jlcindia.spring3.ioc.B" p:hello1-ref="hello1" p:hello2-ref="hello2"/>
+	
+</beans>

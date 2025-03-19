@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bean" default-lazy="false">
+<class name="OrderItem" table="orderitems">
+<id name="orderItemId" column="orderItemId" type="int">
+<generator class="increment"/>
+</id>
+<property name="bookName"/>
+<property name="cost" type="double"/>
+<property name="qty" type="int"/>
+<many-to-one name="order" class="Order" column="orderId"/>
+</class>
+</hibernate-mapping>

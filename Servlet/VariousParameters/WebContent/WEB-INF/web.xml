@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>CompanyName</param-name>
+    <param-value>SauSoft</param-value>
+  </context-param>
+  <context-param>
+    <param-name>website</param-name>
+    <param-value>www.SauSoft.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>HeadOffice</param-name>
+    <param-value>Mathikere</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>ParameterServlet</servlet-name>
+    <servlet-class>com.mypkg.param.ParameterServlet</servlet-class>
+    <init-param>
+      <param-name>email</param-name>
+      <param-value>info@sau.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>phone</param-name>
+      <param-value>9568632758</param-value>
+    </init-param>
+    <init-param>
+      <param-name>RegistrationNumber</param-name>
+      <param-value>9567-jon-96to-pl</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParameterServlet</servlet-name>
+    <url-pattern>/param.sau</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ParameterDemoServlet1</servlet-name>
+    <servlet-class>com.mypkg.param.ParameterDemoServlet1</servlet-class>
+  
+  <init-param>
+      <param-name>email</param-name>
+      <param-value>enquiry@sau1.com</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>phone</param-name>
+      <param-value>08012345689</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>RegistrationNumber</param-name>
+      <param-value>MY-12345-GHOJ</param-value>
+    </init-param>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParameterDemoServlet1</servlet-name>
+    <url-pattern>/paramdemo.sau</url-pattern>
+  </servlet-mapping>
+</web-app>

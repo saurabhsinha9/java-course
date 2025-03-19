@@ -1,0 +1,30 @@
+ create table contacts(
+ contactId NUMBER(6) primary key,
+ firstname varchar(10),
+ lastname varchar(10),
+ email varchar(10),
+ phone NUMBER(6),
+ dob VARCHAR(10),
+ status varchar(10));
+
+ create SEQUENCE contactId_seq
+ START WITH 101
+ INCREMENT BY 1;
+
+ create or replace procedure getAllJLCContacts(cts_cursor out
+ SYS_REFCURSOR)
+ AS
+ BEGIN
+ OPEN cts_cursor FOR
+ SELECT * FROM contacts;
+ END;
+ /
+
+ create or replace procedure getAllJLCActiveContacts(cts_cursor out
+ SYS_REFCURSOR,st in char)
+ AS
+ BEGIN
+ OPEN cts_cursor FOR
+ SELECT * FROM contacts where status=st;
+ END;
+ /

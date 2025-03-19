@@ -1,0 +1,1503 @@
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+ERROR -  could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:57)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:111)
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.invoke(CGLIBLazyInitializer.java:150)
+	at com.jlcindia.bean.Customer$$EnhancerByCGLIB$$ab1dcb59.getCid(<generated>)
+	at com.jlcindia.dao.hibernate.HibernateCustomerDAO.getCustomerByCid(HibernateCustomerDAO.java:22)
+	at com.jlcindia.client.CLab15.main(CLab15.java:24)
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, email, status, cid, city, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, email, status, cid, city, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  schema update complete
+ERROR -  could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:57)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:111)
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.invoke(CGLIBLazyInitializer.java:150)
+	at com.jlcindia.bean.Customer$$EnhancerByCGLIB$$ab1dcb59.getCid(<generated>)
+	at com.jlcindia.dao.hibernate.HibernateCustomerDAO.getCustomerByCid(HibernateCustomerDAO.java:22)
+	at com.jlcindia.client.CLab15.main(CLab15.java:17)
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, email, status, cid, city, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, email, status, cid, city, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Customer
+INFO -  Bind entity com.jlcindia.bean.Customer on table customers
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.customers
+INFO -  columns: [phone, email, status, cid, city, cname]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema export
+INFO -  exporting generated schema to database
+INFO -  schema export complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table not found: candidates
+INFO -  table not found: companies
+INFO -  table not found: ecandidates
+INFO -  table not found: emails
+INFO -  table not found: fcandidates
+INFO -  table not found: percentages
+INFO -  table not found: skills
+INFO -  table not found: candidates
+INFO -  table not found: companies
+INFO -  table not found: ecandidates
+INFO -  table not found: emails
+INFO -  table not found: fcandidates
+INFO -  table not found: percentages
+INFO -  table not found: skills
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete
+INFO -  Hibernate Annotations 3.3.0.GA
+INFO -  Hibernate 3.2.5
+INFO -  hibernate.properties not found
+INFO -  Bytecode provider name : cglib
+INFO -  using JDK 1.4 java.sql.Timestamp handling
+INFO -  configuring from resource: /hibernate.cfg.xml
+INFO -  Configuration resource: /hibernate.cfg.xml
+INFO -  Configured SessionFactory: null
+INFO -  Binding entity from annotated class: com.jlcindia.bean.Candidate
+INFO -  Bind entity com.jlcindia.bean.Candidate on table candidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.FreshCandidate
+INFO -  Bind entity com.jlcindia.bean.FreshCandidate on table fcandidates
+INFO -  Binding entity from annotated class: com.jlcindia.bean.ExpCandidate
+INFO -  Bind entity com.jlcindia.bean.ExpCandidate on table ecandidates
+INFO -  Hibernate Validator 3.0.0.GA
+INFO -  Using Hibernate built-in connection pool (not for production use!)
+INFO -  Hibernate connection pool size: 20
+INFO -  autocommit mode: false
+INFO -  using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost/jlcindiadb11
+INFO -  connection properties: {user=root, password=****}
+INFO -  RDBMS: MySQL, version: 5.0.17-nt
+INFO -  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.0.14-production ( $Date: 2004/04/24 15:49:43 $, $Revision: 1.27.2.39 $ )
+INFO -  Using dialect: org.hibernate.dialect.MySQLDialect
+INFO -  Using default transaction strategy (direct JDBC transactions)
+INFO -  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO -  Automatic flush during beforeCompletion(): disabled
+INFO -  Automatic session close at end of transaction: disabled
+INFO -  JDBC batch size: 15
+INFO -  JDBC batch updates for versioned data: disabled
+INFO -  Scrollable result sets: enabled
+INFO -  JDBC3 getGeneratedKeys(): enabled
+INFO -  Connection release mode: auto
+INFO -  Maximum outer join fetch depth: 2
+INFO -  Default batch fetch size: 1
+INFO -  Generate SQL with comments: disabled
+INFO -  Order SQL updates by primary key: disabled
+INFO -  Order SQL inserts for batching: disabled
+INFO -  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO -  Using ASTQueryTranslatorFactory
+INFO -  Query language substitutions: {}
+INFO -  JPA-QL strict compliance: disabled
+INFO -  Second-level cache: enabled
+INFO -  Query cache: disabled
+INFO -  Cache provider: org.hibernate.cache.NoCacheProvider
+INFO -  Optimize cache for minimal puts: disabled
+INFO -  Structured second-level cache entries: disabled
+INFO -  Echoing all SQL to stdout
+INFO -  Statistics: disabled
+INFO -  Deleted entity synthetic identifier rollback: disabled
+INFO -  Default entity-mode: pojo
+INFO -  Named query checking : enabled
+INFO -  building session factory
+INFO -  Not binding factory to JNDI, no JNDI name configured
+INFO -  Running hbm2ddl schema update
+INFO -  fetching database metadata
+INFO -  updating schema
+INFO -  table found: jlcindiadb11.candidates
+INFO -  columns: [lname, fname, dob, qualification, cid]
+INFO -  foreign keys: []
+INFO -  indexes: [primary]
+INFO -  table found: jlcindiadb11.companies
+INFO -  columns: [idx, companyname, cid]
+INFO -  foreign keys: [fkabc9e1db9031f157]
+INFO -  indexes: [primary, fkabc9e1db9031f157]
+INFO -  table found: jlcindiadb11.ecandidates
+INFO -  columns: [yoe, ctc, cid]
+INFO -  foreign keys: [fk6a1ba175ad9e566e]
+INFO -  indexes: [primary, fk6a1ba175ad9e566e]
+INFO -  table found: jlcindiadb11.emails
+INFO -  columns: [emailid, idx, cid]
+INFO -  foreign keys: [fkb2872857ad9e566e]
+INFO -  indexes: [primary, fkb2872857ad9e566e]
+INFO -  table found: jlcindiadb11.fcandidates
+INFO -  columns: [yop, yeargaps, cid]
+INFO -  foreign keys: [fkff005436ad9e566e]
+INFO -  indexes: [primary, fkff005436ad9e566e]
+INFO -  table found: jlcindiadb11.percentages
+INFO -  columns: [mapkey, cid, percentage]
+INFO -  foreign keys: [fk58b06119beabc4a6]
+INFO -  indexes: [primary, fk58b06119beabc4a6]
+INFO -  table found: jlcindiadb11.skills
+INFO -  columns: [skillname, cid]
+INFO -  foreign keys: [fkca5280429031f157]
+INFO -  indexes: [fkca5280429031f157]
+INFO -  schema update complete

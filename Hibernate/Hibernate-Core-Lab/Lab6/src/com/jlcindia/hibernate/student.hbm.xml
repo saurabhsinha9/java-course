@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Student" table="mystudents">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+
+<joined-subclass name="CurrentStudent" table="cstudents">
+<key column="sid"/>
+<property name="feebal" type="double"/>
+<property name="timings"/>
+<property name="branch"/>
+
+<joined-subclass name="RegularStudent" table="rstudents">
+<key column="sid"/>
+<property name="yoe" type="int"/>
+<property name="qualification"/>
+<property name="percentage"/>
+</joined-subclass>
+
+<joined-subclass name="WeekendStudent" table="wstudents">
+<key column="sid"/>
+<property name="ctc" type="double"/>
+<property name="company"/>
+<property name="cemail"/>
+</joined-subclass>
+</joined-subclass>
+
+<joined-subclass name="OldStudent" table="ostudents">
+<key column="sid"/>
+<property name="ctc" type="double"/>
+<property name="company"/>
+<property name="cemail"/>
+</joined-subclass>
+</class>
+</hibernate-mapping>

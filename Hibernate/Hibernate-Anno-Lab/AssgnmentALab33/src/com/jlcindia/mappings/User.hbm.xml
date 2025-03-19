@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bean" default-lazy="false">
+<class name="User" table="users">
+<id name="userId" column="userId" type="int">
+<generator class="increment"/>
+</id>
+<property name="fullName"/>
+<property name="email"/>
+<map name="logins" table="logins">
+<key column="userId"/>
+<index column="username" type="string"/>
+<element column="password" type="string"/>
+</map>
+<joined-subclass name="Author" table="authors">
+<key column="userId"/>
+<property name="exp" type="int"/>
+<property name="age" type="int"/>
+<property name="company"/>
+<set name="emails" table="emails">
+<key column="userId"/>
+<element column="emailId" type="string"/>
+</set>
+<list name="phones" table="phones">
+<key column="userId"/>
+<index/>
+<element column="phoneNo" type="string"/>
+</list>
+<set name="books" table="authors_books">
+<key column="userId"/>
+<many-to-many column="bookId" class="Book"/>
+</set>
+</joined-subclass>
+
+<joined-subclass name="Customer" table="customers">
+<key column="userId"/>
+<bag name="ccnos" table="ccnos">
+<key column="userId"/>
+<element column="ccno" type="long"/>
+</bag>
+<property name="custType"/>
+<property name="phone" type="long"/>
+<property name="dob" type="string"/>
+<set name="orders" table="orders">
+<key column="userId"/>
+<one-to-many class="Order"/>
+</set>
+</joined-subclass>
+</class>
+</hibernate-mapping>

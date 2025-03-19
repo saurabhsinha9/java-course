@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean  name="loginForm"
+		 			type="org.apache.struts.validator.DynaValidatorForm" >
+		 <form-property name="uname" type="java.lang.String"/>
+		 <form-property name="pword" type="java.lang.String"/>
+	</form-bean>
+	</form-beans>
+	<global-forwards>
+		<forward name="login" path="/login.jsp"/>
+	</global-forwards>
+	
+	<action-mappings>
+		<action path="/login" 
+				name="loginForm"
+				type="com.jlcindia.struts1.LoginAction" 
+				scope="session" 
+				input="/login.jsp">
+			
+		<forward name="success" path="/home.jsp" />
+		</action>
+	</action-mappings>
+	<message-resources parameter="com.jlcindia.struts1.Application" />
+	
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+	<set-property value="/WEB-INF/validator-rules.xml,/WEB-INF/myvalidations.xml"
+				  property="pathnames"/>
+	</plug-in>
+	</struts-config>
+
+
+
+
+
+	

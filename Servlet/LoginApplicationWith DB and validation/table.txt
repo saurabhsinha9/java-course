@@ -1,0 +1,14 @@
+
+create table registered_users(
+id int(5) primary key AUTO_INCREMENT,
+fname char(10),
+lname char(10),
+email char(25)unique not null,
+phone char(10),
+gender char(8),
+cardtype char(10),
+cardnumber char(12),
+color char(80),
+username char(10)unique not null,
+password char(10) not null
+);

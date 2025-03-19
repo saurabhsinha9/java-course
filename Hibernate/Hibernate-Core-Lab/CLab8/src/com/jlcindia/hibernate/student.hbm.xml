@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Student" table="mystudents1">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+</class>
+
+<class name="CurrentStudent" table="cstudents1">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+
+<property name="feebal" type="double"/>
+<property name="timings"/>
+<property name="branch"/>
+</class>
+
+<class name="RegularStudent" table="rstudents1">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+
+<property name="feebal" type="double"/>
+<property name="timings"/>
+<property name="branch"/>
+
+<property name="yoe" type="int"/>
+<property name="qualification"/>
+<property name="percentage"/>
+</class>
+
+<class name="WeekendStudent" table="wstudents1">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+
+<property name="feebal" type="double"/>
+<property name="timings"/>
+<property name="branch"/>
+
+<property name="ctc" type="double"/>
+<property name="company"/>
+<property name="cemail"/>
+</class>
+
+
+<class name="OldStudent" table="ostudents1">
+<id name="sid" column="sid" type="int">
+<generator class="increment"/>
+</id>
+<property name="sname"/>
+<property name="city"/>
+<property name="status"/>
+<property name="totalfee" type="double"/>
+
+<property name="ctc" type="double"/>
+<property name="company"/>
+<property name="cemail"/>
+</class>
+</hibernate-mapping>

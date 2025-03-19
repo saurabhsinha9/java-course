@@ -1,0 +1,114 @@
+Annotations in Java is all about adding meta-data facility to the Java Elements.
+Like Classes, Interfaces or Enums, Annotations define a type in Java and they can be applied to several Java Elements.
+
+Annotations in Java can be seen elsewhere in a program. It can be seen in class declaration, method declaration, field declaration etc.
+
+Consider the following class definition,
+
+Employee.java
+---------------
+final class Employee
+    {
+        private String name;
+        private String id;
+ 
+        // Getters and setters for Employee class.
+    }
+The above is a definition of a class, Employee. It can be noted that the class declaration is preceded with the final keyword which tells that this class cannot be sub-classed. So, the introduction of the final keyword adds some additional information (or adds some constraints) over the class definition telling that no other class in the word can extend the Employee class. Therefore, the final keyword forms a part in providing meta-data information in the class definition. So, this is one variation of Annotation. Annotations are generally a way to add meta-data information to an element (an element can be a class, method, field, or anything) and these meta-data are processed by the tools (compilers, javadoc, etc.). Annotations are differentiated from other elements like class, interface etc., by preceding an '@' symbol before it.
+
+
+
+An annotation definition looks like the following,
+
+TestAnnotation.java
+------------------------
+public @interface TestAnnotation
+    {
+        // Property Definition here.
+    }
+Don’t get confused with the interface keyword. It has nothing to do with annotations. '@' along with interface is the start of the annotation definition and TestAnnotation in the above case is the name of the Annotation. Whether annotations can be applied to class (a class-level annotation), or a method (method-level annotation) or a field (field-level annotation) is specified in the declaration of the annotation itself. This is referred to as Annotating an Annotation itself.
+------------------------
+Target Annotation
+-----------------
+@Target(ElementType.METHOD)
+    public @interface TestAnnotation
+    {
+        // Property Definitions here.
+    }
+From the above, we can see that the Annotation @TestAnnotation is annotated with @Target. This kind of Annotation Chaining is always possible. The target element tells that the @TestAnnotation annotation can be applied only to methods and not to any other element types. The argument to @Target Annotation can be one from the possible set of values of any Java Element, which is defined in a well-defined Enum called ElementType. Here are the possible values taken by this Enum,
+1.TYPE – Applied only to Type. A Type can be a Java class or interface or an Enum or even an Annotation.
+2.FIELD – Applied only to Java Fields (Objects, Instance or Static, declared at class level).
+3.METHOD – Applied only to methods.
+4.PARAMETER – Applied only to method parameters in a method definition.
+5.CONSTRUCTOR – Can be applicable only to a constructor of a class.
+6.LOCAL_VARIABLE – Can be applicable only to Local variables. (Variables that are declared within a method or a block of code).
+7.ANNOTATION_TYPE – Applied only to Annotation Types.
+8.PACKAGE – Applicable only to a Package.
+-----------------------
+Retention Annotation
+----------------------
+commonly used Meta-data for an Annotation is the Retention Policy. Assume that we have some Annotations defined in the source code. We have a mechanism through which we can say that to what extent the Annotations should be retained. The three possible ways of telling this are,
+
+Retain the Annotation in the Source Code only
+Retain the Annotation in the Class file also.
+Retain the Annotation Definition during the Run-time so that JVM can make use of it.
+The Annotation that is used to achieve this is @Retention and it takes a possible values of SOURCE, CLASS and RUNTIME defined in RetentionPolicy Enumeration.
+@Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.CLASS)
+    public @interface TestAnnotation
+    {
+        // Property Definitions here.
+    }
+
+--------------------------------
+Built-in Annotations in Java
+------------------------------
+1.Override
+2.Deprecated
+3.SuppressWarnings
+---------------------------
+The @Override Annotation
+
+The syntax of the @Override annotation is as follows,
+
+Override.java
+--------------
+@Retention(RetentionPolicy.CLASS)
+    @Target(ElementType.RUNTIME)
+    public @interface Override
+    {
+    }
+--------------------
+@Override annotation essentially tells to the compiler that, whenever such an annotation is defined in a method of some class, then that method must be an overridden method. If not, then the compilers can report them as errors. 
+---
+Employee.java
+-------------
+public class Employee
+    {
+        protected void startWork()
+        {
+            // Code that will start to do some work.
+        }
+ 
+        protected void endWork()
+        {
+            // Code to end the work.
+        }
+    }
+Manager.java
+-----------
+public class Manager extends Employee
+    {
+ 
+        @Override
+        protected void startWork()
+        {
+            // Code that will start to do some work.
+        }
+ 
+        @Override
+        protected void endWork()
+        {
+            // Code to end the work.
+        }
+    }

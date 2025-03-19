@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jlc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jlc.xsd">
+  <student>
+    <sname>sname</sname>
+    <email>email</email>
+    <phone>0</phone>
+  </student>
+  <student>
+    <sname>sname</sname>
+    <email>email</email>
+    <phone>0</phone>
+  </student>
+  <student>
+    <sname>sname</sname>
+    <phone>0</phone>
+  </student>
+</jlc>

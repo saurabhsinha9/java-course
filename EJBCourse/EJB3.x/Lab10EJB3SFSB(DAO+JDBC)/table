@@ -1,0 +1,13 @@
+create table orders(
+orderId int primary key,
+orderDate char(15),
+totalQty int,
+totalCost double,
+status char(15));
+
+create table orderitems(
+orderId int references orders,
+orderItemId int,
+bookId char(15),
+qty int,
+cost double);

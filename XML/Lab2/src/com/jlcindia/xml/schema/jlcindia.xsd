@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sd:schema xmlns:sd="http://www.w3.org/2001/XMLSchema" 
+			   targetNamespace="http://www.jlcindia.com/books" 
+			   xmlns:jlc="http://www.jlcindia.com/books" 
+			   elementFormDefault="qualified">
+
+<sd:element name="books">
+<sd:complexType>
+<sd:sequence>
+<sd:element ref="book" minOccurs="0" maxOccurs="unbounded"/>
+<sd:element ref="author" maxOccurs="unbounded"/>
+</sd:sequence>
+</sd:complexType>
+</sd:element>
+
+<sd:element name="author">
+<sd:complexType>
+<sd:sequence>
+<sd:element ref="name"/>
+<sd:element ref="qualification" />
+<sd:element ref="company"/>
+</sd:sequence>
+<sd:attribute name="aid" type="sd:string" use="required"/>
+</sd:complexType>
+</sd:element>
+
+<sd:element name="book">
+<sd:complexType>
+<sd:sequence>
+<sd:element ref="bname"/>
+<sd:element ref="authorName" maxOccurs="unbounded"/>
+<sd:element ref="pub"/>
+<sd:element ref="isbn"/>
+</sd:sequence>
+<sd:attribute name="bid" type="sd:string" use="required"/>
+<sd:attribute name="fee" type="sd:string" default="no"/>
+</sd:complexType>
+</sd:element>
+
+<sd:element name="bname" type="sd:string"/>
+<sd:element name="authorName" type="sd:string"/>
+<sd:element name="pub" type="sd:string"/>
+<sd:element name="isbn" type="sd:string"/>
+<sd:element name="name" type="sd:string"/>
+<sd:element name="qualification" type="sd:string"/>
+<sd:element name="company" type="sd:string"/>
+</sd:schema>

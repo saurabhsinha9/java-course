@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ejb-jar PUBLIC 
+'-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN' 
+'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+
+<ejb-jar>
+  <enterprise-beans>
+    <session>
+     <ejb-name>BooksManagerEJB</ejb-name> 
+     <home>com.jlcindia.bookstore.ejb2.books.BooksManagerHome</home>
+     <remote>com.jlcindia.bookstore.ejb2.books.BooksManagerRemote</remote>
+     <ejb-class>com.jlcindia.bookstore.ejb2.books.BooksManagerBean</ejb-class>
+     <session-type>Stateless</session-type>
+     <transaction-type>Container</transaction-type>
+    </session>
+  </enterprise-beans>
+  <assembly-descriptor>
+  </assembly-descriptor>
+</ejb-jar>

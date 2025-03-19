@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE customers SYSTEM "cust.dtd" >
+<customers>
+<customer cid="11" city="Blore">
+<cname>Saurabh</cname>
+<email>sau@jlc</email>
+<phone>9999</phone>
+</customer>
+</customers>

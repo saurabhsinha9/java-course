@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+	<Student>
+		<Sid>99</Sid>
+		<Sname>Saurabh</Sname>
+		<Email>sau@jlc</Email>
+		<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">99999</Phone>
+		<Address>
+			<Street>HMT</Street>
+			<City>Blore</City>
+			<Zip>560054</Zip>
+			<State>KA</State>
+			<Country>INDIA</Country>
+		</Address>
+	</Student>
+	<Student>
+		<Sid>11</Sid>
+		<Sname>Sau</Sname>
+		<Email>saur@jlc</Email>
+		<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">99999</Phone>
+		<Address>
+			<Street>HMT</Street>
+			<City>Blore</City>
+			<Zip>560054</Zip>
+			<State>KA</State>
+			<Country>INDIA</Country>
+		</Address>
+	</Student>
+	<Student>
+		<Sid>99</Sid>
+		<Sname>Saurabh</Sname>
+		<Email>sau@jlc</Email>
+		<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">99999</Phone>
+		<Address>
+			<Street>HMT</Street>
+			<City>Blore</City>
+			<Zip>560054</Zip>
+			<State>KA</State>
+			<Country>INDIA</Country>
+		</Address>
+	</Student>
+	<Student>
+		<Sid>11</Sid>
+		<Sname>Sau</Sname>
+		<Email>saur@jlc</Email>
+		<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">99999</Phone>
+		<Address>
+			<Street>HMT</Street>
+			<City>Blore</City>
+			<Zip>560054</Zip>
+			<State>KA</State>
+			<Country>INDIA</Country>
+		</Address>
+	</Student>
+	<Student>
+		<Sid>99</Sid>
+		<Sname>Saurabh</Sname>
+		<Email>sau@jlc</Email>
+		<Phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">99999</Phone>
+		<Address>
+			<Street>HMT</Street>
+			<City>Blore</City>
+			<Zip>560054</Zip>
+			<State>KA</State>
+			<Country>INDIA</Country>
+		</Address>
+	</Student>
+</Students>

@@ -1,0 +1,60 @@
+<html>
+<body>
+<h1>
+<script type="text/javascript">
+var txt="Welcome to JLC";
+document.write("<p>text:"+txt);
+document.write("<p>Length:"+txt.length);
+document.write("<p>Big:"+txt.big());
+document.write("<p>Small:"+txt.small());
+document.write("<p>Bold:"+txt.bold());
+document.write("<p>Italics:"+txt.italics());
+document.write("<p>Fixed:"+txt.fixed());
+document.write("<p>Strike:"+txt.strike());
+document.write("<p>FontColor:"+txt.fontcolor("Red"));
+document.write("<p>FontSize:"+txt.fontsize(16));
+document.write("<p>LowerCase:"+txt.toLowerCase());
+document.write("<p>UpperCase:"+txt.toUpperCase());
+document.write("<p>Subscript:"+txt.sub());
+document.write("<p>SuperScript:"+txt.sup());
+
+var str="Hello world!"
+document.write("<p>"+str.match("world"));
+document.write("<p>"+str.match("World"));
+document.write("<p>"+str.match("worlld"));
+document.write("<p>"+str.match("world!"));
+document.write("<p>"+str.match("lo wo"));
+
+var st="Welcome to JLC!";
+st=st.fontsize(16);
+document.write("<p>"+st.link("http://www.jlcindia.com"));
+
+var str="srinivas";
+document.write("<p>"+str);
+document.write("<p>"+str.substring(1, 6));
+document.write("<p>"+str.substr(1, 6));
+document.write("<p>"+str.slice(6));
+document.write("<p>"+str.slice(2));
+document.write("<p>"+str.search("vas"));
+document.write("<p>"+str.search("sri"));
+document.write("<p>"+str.search("sd"));
+document.write("<p>"+str.indexOf("i"));
+document.write("<p>"+str.lastIndexOf("i"));
+document.write("<p>"+str.charAt(2));
+document.write("<p>"+str.charAt(4));
+document.write("<p>"+str.replace("i", "Jaiho"));
+document.write("<p>"+str.concat("Hello Hai"));
+
+var str="welcome to java learning center";
+document.write("<p>"+str.split(" "));
+var ar=new Array(10);
+ar=str.split(" ");
+document.write("<p>"+ar[0]);
+document.write("<p>"+ar[1]);
+document.write("<p>"+ar[2]);
+document.write("<p>"+ar[3]);
+document.write("<p>"+ar[4]);
+</script>
+</h1>
+</body>
+</html>

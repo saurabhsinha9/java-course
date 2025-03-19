@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0.1//EN" "validator_1_0_1.dtd" >
+<form-validation>
+<formset>
+	<form name="bidSearchForm">
+
+			<field property="bid" depends="required,bidformat">
+				<arg0 key="Batch Id" resource="false" />
+			</field>
+		</form>
+
+		<form name="sidSearchForm">
+
+			<field property="sid" depends="required,sidformat">
+				<arg0 key="Student Id" resource="false" />
+			</field>
+		</form>
+	
+</formset>
+</form-validation>

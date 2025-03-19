@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <form-beans>
+  
+  <form-bean name="loginForm" type="org.apache.struts.validator.DynaValidatorForm">
+  <form-property name="username" type="java.lang.String"/>
+  <form-property name="password" type="java.lang.String"/>
+  </form-bean>
+ 
+ <form-bean name="tempForm" 
+ type="org.apache.struts.validator.DynaValidatorForm">
+  </form-bean>
+  
+    <!-- Registration related -->
+  <form-bean name="registerForm" type="org.apache.struts.validator.DynaValidatorForm">
+  <form-property name="username" type="java.lang.String"/>
+  <form-property name="password" type="java.lang.String"/>
+  <form-property name="studname" type="java.lang.String"/>
+  <form-property name="studemail" type="java.lang.String"/>
+  <form-property name="studphone" type="java.lang.String"/>
+  <form-property name="branchname" type="java.lang.String"/>
+  <form-property name="batchid" type="java.lang.String"/>
+  <form-property name="studid" type="java.lang.String"/>
+  </form-bean>
+  
+  <!-- Branch related -->
+  <form-bean name="branchForm" type="org.apache.struts.validator.DynaValidatorForm">
+  <form-property name="branchname" type="java.lang.String"/>
+   </form-bean>
+  
+  <!-- Add Topic related -->
+  <form-bean name="topicForm" type="org.apache.struts.validator.DynaValidatorForm">
+  <form-property name="topicname" type="java.lang.String"/>
+   </form-bean>
+  
+   <!--Post Question related -->
+  <form-bean name="questionForm" type="org.apache.struts.validator.DynaValidatorForm">
+  <form-property name="compname" type="java.lang.String"/>
+  <form-property name="topicid" type="java.lang.String"/>
+  <form-property name="question" type="java.lang.String"/>
+  </form-bean>
+  
+  
+  
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  
+  <action-mappings >
+  <action path="/login" name="loginForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+          scope="request" 
+          input="/login.jsp">
+          
+   <forward name="invalid" path="/login.jsp"/>
+   <forward name="success" path="/userhome.jsp"/>       
+   </action>
+   
+  
+  <action path="/showregistration" name="tempForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+         scope="request">
+     <forward name="success123" path="/register.jsp"/>       
+   </action>
+    <!-- Registration related -->
+   <action path="/register" name="registerForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+         scope="request"
+          input="/register.jsp">
+         <forward name="success" path="/WEB-INF/pages/xyz.jsp"/>       
+     <forward name="invalid" path="/register.jsp"/>       
+   
+   </action>
+   
+    <!-- Branch related -->
+    <action path="/addbranch" name="branchForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+         scope="request"
+          input="/addbranch.jsp">
+         <forward name="success" path="/WEB-INF/pages/xyz.jsp"/>       
+     <forward name="invalid" path="/addbranch.jsp"/>       
+      </action>
+   
+   <!-- Topic related -->
+    <action path="/addtopic" name="topicForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+         scope="request"
+          input="/addtopic.jsp">
+         <forward name="success" path="/WEB-INF/pages/xyz.jsp"/>       
+     <forward name="invalid" path="/addtopic.jsp"/>       
+      </action>
+   
+    <!--Post Question related -->
+   <action path="/postquestion" name="questionForm" 
+          type="org.springframework.web.struts.DelegatingActionProxy"
+         scope="request"
+          input="/postquestion.jsp">
+         <forward name="success" path="/WEB-INF/pages/xyz.jsp"/>       
+     <forward name="invalid" path="/postquestion.jsp"/>       
+      </action>
+   
+   
+   </action-mappings>
+   <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+   
+<plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+  <set-property property="contextConfigLocation" value="/WEB-INF/techunt-context.xml"/>
+  </plug-in>
+
+<plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-config" value="/WEB-INF/techunt-tiles.xml"/>
+  </plug-in>
+</struts-config>
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function reloadPage(){
+	window.location.reload();
+}
+
+function currLocation(){
+	document.write('<h1>'+window.location);
+	document.write('<h1>'+window.location.href);
+	document.write('<h1>'+window.location.host);
+	document.write('<h1>'+window.location.hostname);
+	document.write('<h1>'+window.location.pathname);
+	document.write('<h1>'+window.location.port);
+	document.write('<h1>'+window.location.protocol);
+}
+
+function newLocation(){
+	window.location="http://www.jlcindia.com"
+}
+</script>
+</head>
+<body>
+<input type="button" value="Show Current URL" onclick="currLocation()"/>
+<input type="button" value="Change URL" onclick="newLocation()"/>
+<input type="button" value="Reload Page" onclick="reloadPage()"/>
+</body>
+</html>

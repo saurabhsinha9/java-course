@@ -1,0 +1,12 @@
+<html>
+<body>
+<%
+application.setAttribute("email","saurabh@jlc");
+out.println("<h1>"+application.getAttribute("email")+"</h1>");
+application.setAttribute("email","sri@jlc");
+out.println("<h1>"+application.getAttribute("email")+"</h1>");
+application.removeAttribute("email");
+out.println("<h1>"+application.getAttribute("email")+"</h1>");
+%>
+</body>
+</html>

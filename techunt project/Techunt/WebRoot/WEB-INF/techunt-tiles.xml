@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiles-definitions>
+<definition name="index.home" template="/WEB-INF/pages/BVBHomeLayout.jsp">
+<put name="bvbHeader" value="/WEB-INF/pages/header.jsp"/>
+<put name="bvbBody" value="/WEB-INF/pages/login1.jsp"/>
+<put name="bvbFooter" value="/WEB-INF/pages/footer.jsp"/>
+</definition>
+
+<definition name="index.register" extends="index.home">
+<put name="bvbBody" value="/WEB-INF/pages/register.jsp"/>
+</definition>
+
+<definition name="index.user.home" template="/WEB-INF/pages/BVBUserLayout.jsp">
+<put name="bvbHeader" value="/WEB-INF/pages/header.jsp"/>
+<put name="bvbtopmenu" value="/WEB-INF/pages/topmenu.jsp"/>
+<put name="bvbleftmenu" value="/WEB-INF/pages/leftmenu.jsp"/>
+<put name="bvbbody" value="/WEB-INF/pages/welcome.jsp"/>
+<put name="bvbFooter" value="/WEB-INF/pages/footer.jsp"/>
+</definition>
+
+
+<definition name="index.add.topic" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/addtopic.jsp"/>
+</definition>
+
+<definition name="index.add.branch" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/addbranch.jsp"/>
+</definition>
+
+<definition name="index.post.question" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/postquestion.jsp"/>
+</definition>
+
+<definition name="index.search.result" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/searchresult.jsp"/>
+</definition>
+
+<definition name="index.search.user" extends="index.home">
+<put name="bvbbody" value="/WEB-INF/pages/searchuser.jsp"/>
+</definition>
+
+<definition name="index.search.date" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/searchbydate.jsp"/>
+</definition>
+
+<definition name="index.view.account" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/viewaccount.jsp"/>
+</definition>
+
+<definition name="index.change.password" extends="index.user.home">
+<put name="bvbbody" value="/WEB-INF/pages/changepassword.jsp"/>
+</definition>
+
+
+
+
+
+
+
+
+
+
+</tiles-definitions>

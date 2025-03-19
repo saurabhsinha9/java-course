@@ -1,0 +1,4 @@
+#Wed Jun 13 16:56:23 IST 2012
+com.jlcindia.jaxb.Address=com.jlcindia.jaxb.descriptors.AddressDescriptor
+com.jlcindia.jaxb.Students=com.jlcindia.jaxb.descriptors.StudentsDescriptor
+com.jlcindia.jaxb.Student=com.jlcindia.jaxb.descriptors.StudentDescriptor

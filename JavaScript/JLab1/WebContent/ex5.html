@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Add Page</title>
+<script type="text/javascript">
+function addText(){
+
+	var name=document.form1.name.value;
+	name.fontsize(6);
+
+	var node=document.createTextNode("\n"+name);
+	document.getElementById("p1").appendChild(node);
+}
+</script>
+</head>
+<body>
+<h1>List Name</h1>
+<hr color="red"/>
+<p id="p1"></p>
+<hr color="red"/>
+<form name="form1">
+Enter Your Name:<br/>
+<input type="text" name="name"><br/>
+<input type="button" value="Add" onclick="addText();">
+</form>
+</body>
+</html>

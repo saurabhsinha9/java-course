@@ -1,0 +1,9 @@
+create schema jlcindiadb;
+use jlcindiadb;
+create table customers(
+cid int primary key,
+cname char(20),
+email char(25),
+phone long,
+city char(15)
+);

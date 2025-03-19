@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" >
+
+<tiles-definitions>
+
+<definition name="Home" page="/WEB-INF/jsps/JLCLayout.jsp">
+<put name="title" value="Java Learning Center"/>
+<put name="header" value="/WEB-INF/jsps/header.jsp"/>
+<put name="menuBar" value="/WEB-INF/jsps/menuBar.jsp"/>
+<put name="content" value="/WEB-INF/jsps/welcome.jsp"/>
+<put name="footer" value="/WEB-INF/jsps/footer.jsp"/>
+</definition>
+
+<definition name="AddEnquiry" extends="Home">
+<put name="content" value="/WEB-INF/jsps/addEnquiry.jsp"/>
+</definition>
+
+<definition name="AddEnquirySuccess" extends="Home">
+<put name="content" value="/WEB-INF/jsps/addEnquirySuccess.jsp"/>
+</definition>
+</tiles-definitions>

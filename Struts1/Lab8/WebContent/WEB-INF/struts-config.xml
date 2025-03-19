@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+<data-sources/>
+
+	<form-beans>
+	<form-bean name="regForm"
+			   type="org.apache.struts.action.DynaActionForm">
+			   
+			<form-property name="sid" type="java.lang.String" />
+			<form-property name="username" type="java.lang.String" />
+			<form-property name="password" type="java.lang.String" />
+			<form-property name="email" type="java.lang.String" />
+			<form-property name="phone" type="java.lang.Long" />
+			<form-property name="fee" type="java.lang.Double" />
+			<form-property name="dob" type="java.lang.String" />
+			<form-property name="quali" type="java.lang.String" />
+			<form-property name="course" type="java.lang.String[]" />
+			<form-property name="gender" type="java.lang.String" />	
+			</form-bean>
+	</form-beans>
+
+ 	<global-exceptions/>
+ 	
+ 	<global-forwards>
+	 <forward name="register" path="/register.jsp"/>
+	 <forward name="home" path="/home.jsp"/>
+ 	</global-forwards> 
+ 	
+	 <action-mappings>
+		 <action path="/RegisterSubmit"
+		 		 name="regForm"
+		 		 type="com.jlcindia.struts1.RegisterAction"
+		 		 validate="false"
+		 		 input="/register.jsp"/>
+	 </action-mappings>
+ 
+	<message-resources parameter="com.jlcindia.struts1.Application" />
+  
+</struts-config>
+

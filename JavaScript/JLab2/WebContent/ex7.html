@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Dynamic Text in JavaScript</title>
+<script type="text/javascript">
+function showHide(){
+	var weekend=document.getElementById("weekend");
+	var regular=document.getElementById("regular");
+	
+	var show_weekend=document.form1.weekend.checked;
+	var show_regular=document.form1.regular.checked;
+	if(navigator.userAgent.indexOf("NetScape6")!=-1){
+		weekend.style.visibility=(show_weekend)?"visible":"hidden";
+		regular.style.visibility=(show_regular)?"visible":"hidden";
+	}else{
+		weekend.style.display=(show_weekend)?"":"none";
+		regular.style.display=(show_regular)?"":"none";
+	}
+}
+</script>
+</head>
+<body>
+<h1 id="weekend">Core Java<br/>
+JDBC<br/>
+JSP<br/>
+Servlets<br/>
+</h1>
+
+<h1 id="regular">Hibernate<br/>
+Spring<br/>
+JSF<br/>
+EJB<br/>
+</h1>
+<form name="form1">
+<table>
+<tr>
+<td>
+<input type="checkbox" name="weekend"checked onclick="showHide();">
+<font>
+<b>Weekend</b><br/>
+</font> 
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="checkbox" name="regular"checked onclick="showHide();">
+<font>
+<b>Regular</b><br/>
+</font> 
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

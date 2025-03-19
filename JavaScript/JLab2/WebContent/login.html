@@ -1,0 +1,87 @@
+<html>
+<head>
+<script type="text/javascript">
+function f1(){
+	alert("f1");
+	var un=document.loginForm.username.focus();
+}
+
+function showUnMsg(){
+	var unDiv=document.getElementById("unMsg");
+	unDiv.innerHTML="<font color=green size=6>Enter UserName here</font>";
+}
+function checkUsername(){
+	var un=document.loginForm.username.value;
+	var unDiv=document.getElementById("unMsg");
+	if(un==""||un.length==0){
+		var msg="UserName is Required";
+		unDiv.innerHTML="<font color=red size=6>"+msg+"</font>";
+	}else{
+		unDiv.innerHTML="";
+	}
+}
+
+function checkPassword(){
+	var pw=document.loginForm.password.value;
+	var pwDiv=document.getElementById("pwMsg");
+	if(pw==""||pw.length==0){
+		var msg="Password is Required";
+		pwDiv.innerHTML="<font color=red size=6>"+msg+"</font>";
+	}else{
+		pwDiv.innerHTML="";
+	}
+}
+function showPwMsg(){
+	var pwDiv=document.getElementById("pwMsg");
+	pwDiv.innerHTML="<font color=green size=6>Enter Password here</font>";
+}
+
+function verifyUser(){
+	var un=document.loginForm.username.value;
+	var pw=document.loginForm.password.value;
+	var status=document.getElementById("status");
+	if(un==pw){
+		alert("tttt");
+		st.innerHTML="Login Success":
+	}else{
+		alert("ffff");
+		st.innerHTML="Login Failed":
+	}
+}
+
+</script>
+</head>
+<body onload="f1();">
+<h1>JLC LoginForm</h1>
+<div id="status"></div>
+<form name="loginForm">
+<table>
+<tr>
+<td>UserName</td>
+<td>
+<input type="text" name="username" onblur="checkUsername()" onfocus="showUnMsg()">
+</td>
+<td>
+<div id="unMsg"></div>
+</td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td>
+<input type="password" name="password" onblur="checkPassword()" onfocus="showPwMsg()">
+</td>
+<td>
+<div id="pwMsg"></div>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" value="Login" onclick="verifyUser();">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

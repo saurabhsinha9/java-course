@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jlc="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	
+	<bean id="ao" class="com.jlcindia.spring3.ioc.A" jlc:a="99" jlc:msg1="Hai Guys msg1"/>
+	<bean id="bo1" class="com.jlcindia.spring3.ioc.B" jlc:b="22" jlc:a="11" jlc:msg1="Hai Guys msg1" jlc:msg2="Hello guys msg2"/>
+	<bean id="bo2" class="com.jlcindia.spring3.ioc.B" jlc:b="22" jlc:msg2="Hello guys msg2"/>
+	 
+	<!-- <bean id="hello1" class="com.jlcindia.spring3.ioc.Hello" autowire="byType"/>
+	  -->
+	<bean id="hello" class="com.jlcindia.spring3.ioc.Hello" jlc:aobj-ref="ao" jlc:bobj-ref="bo1"/>
+	
+</beans>

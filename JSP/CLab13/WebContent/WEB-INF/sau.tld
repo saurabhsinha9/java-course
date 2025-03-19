@@ -1,0 +1,17 @@
+
+<taglib>
+<tlib-version>1.0</tlib-version>
+<jspversion>1.1</jspversion>
+<shortname>sausoft custom tag</shortname>
+<uri>http://www.sausoft.com/ctags/tld/sau.tld</uri>
+<tag>
+<name>getMessage</name>
+<tag-class>com.jlcindia.jsp.ctags.GetMessageTag</tag-class>
+<body-context>empty</body-context>
+<attribute>
+<name>empId</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+</taglib>

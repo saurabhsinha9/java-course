@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<form-beans>
+	<form-bean name="tmpForm"
+				type="org.apache.struts.action.DynaActionForm">
+				
+	</form-bean>
+  </form-beans>
+  <global-forwards>
+  	<forward name="download" path="/Download.do?method=downloadProfile"/>
+  </global-forwards>
+  
+  <action-mappings>
+  	
+  	<action path="/Download"
+  			name="tmpForm"
+  			type="com.jlcindia.struts1.DownloadAction"
+  			parameter="method"
+  			input="/downloadhome.jsp"/>
+
+  </action-mappings>
+  <message-resources parameter="com.jlcindia.struts1.Application"/>
+  
+</struts-config>
+

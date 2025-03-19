@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bookstore.dao">
+<class name="Order" table="orders">
+<id name="orderId" column="orderId" type="int">
+<generator class="increment"/>
+</id>
+<property name="orderDate"/>
+<property name="cid" />
+<property name="status"/>
+<property name="totalCost" type="double"/>
+<property name="totalQty" type="int"/>
+<set name="orderItems">
+<key column="orderId"/>
+<one-to-many class="OrderItem"/>
+</set>
+</class>
+</hibernate-mapping>

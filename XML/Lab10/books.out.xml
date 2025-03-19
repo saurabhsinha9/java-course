@@ -1,0 +1,27 @@
+
+<html>
+<body>
+<h1>JLC Books</h1>
+<center>
+<h1>
+		BookId: B-101<br>
+		BookName: Master Java<br>
+		Author: Saurabh<br>
+		Cost: 999.99<br>
+</h1>
+</center>
+</body>
+</html>
+<html>
+<body>
+<h1>JLC Books</h1>
+<center>
+<h1>
+		BookId: B-102<br>
+		BookName: Beginner Java<br>
+		Author: Saurabh<br>
+		Cost: 333.33<br>
+</h1>
+</center>
+</body>
+</html>

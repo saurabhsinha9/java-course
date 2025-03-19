@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Student" table="students">
+<id name="studentId" column="studentId" type="java.lang.String">
+<generator class="com.jlcindia.hibernate.util.SIDGenerator"/>
+</id>
+<property name="batchId" column="batchId" type="java.lang.String"/>
+
+<property name="firstName" column="firstName" type="java.lang.String"/>
+<property name="lastName" column="lastName" type="java.lang.String"/>
+<property name="email" column="email" type="java.lang.String"/>
+<property name="phone" column="phone" type="java.lang.String"/>
+<property name="gender" column="gender" type="java.lang.String"/>
+<property name="qualification" column="qualification" type="java.lang.String"/>
+<property name="totalFee" column="totalFee" type="java.lang.Double"/>
+<property name="feePaid" column="feePaid" type="java.lang.Double"/>
+<property name="feeBal" column="feeBal" type="java.lang.Double"/>
+<property name="status" column="status" type="java.lang.String"/>
+<property name="remarks" column="remarks" type="java.lang.String"/>
+</class>
+</hibernate-mapping>

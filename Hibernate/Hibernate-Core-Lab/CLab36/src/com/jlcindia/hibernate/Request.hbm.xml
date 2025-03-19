@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Request" table="requests">
+<id name="reqId" column="reqId" type="string">
+<generator class="uuid"/>
+</id>
+<version name="version" type="integer"/>
+<property name="cid"/>
+<property name="message"/>
+<property name="reqDate" type="date"/>
+</class>
+</hibernate-mapping>

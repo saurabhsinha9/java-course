@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Contact" table="contacts">
+<id name="contactId" column="contactId" type="int">
+<generator class="increment"/>
+</id>
+<property name="firstName"/>
+<property name="lastName"/>
+<property name="email"/>
+<property name="phone" type="long"/>
+<property name="dob"/>
+<property name="status"/>
+</class>
+<sql-query name="JLCAllContacts">
+<return alias="cts" class="Contact"/>
+SELECT cts1.contactId AS {cts.contactId},
+cts1.firstName AS {cts.firstName},
+cts1.lastName AS {cts.lastName},
+cts1.email AS {cts.email},
+cts1.phone AS {cts.phone},
+cts1.dob AS {cts.dob},
+cts1.status AS {cts.status} 
+FROM contacts cts1
+</sql-query>
+
+<sql-query name="JLCActiveContacts">
+<return alias="cts" class="Contact"/>
+SELECT cts1.contactId AS {cts.contactId},
+cts1.firstName AS {cts.firstName},
+cts1.lastName AS {cts.lastName},
+cts1.email AS {cts.email},
+cts1.phone AS {cts.phone},
+cts1.dob AS {cts.dob},
+cts1.status AS {cts.status} 
+FROM contacts cts1
+WHERE cts1.status=:st
+</sql-query>
+
+<sql-query name="EmailsOfAllContacts">
+<return-scalar column="email" type="string"/>
+SELECT 
+cts1.email AS email 
+FROM contacts cts1
+</sql-query>
+
+<sql-query name="EmailsPhonesAndStatusOfAllContacts">
+<return-scalar column="email" type="string"/>
+<return-scalar column="phone" type="long"/>
+<return-scalar column="status" type="string"/>
+SELECT 
+cts1.email AS email, 
+cts1.phone AS phone ,
+cts1.status AS status 
+FROM contacts cts1
+</sql-query>
+</hibernate-mapping>

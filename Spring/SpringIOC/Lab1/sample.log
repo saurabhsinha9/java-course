@@ -1,0 +1,6 @@
+INFO -  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55571e: startup date [Thu Jul 19 10:04:49 IST 2012]; root of context hierarchy
+INFO -  Loading XML bean definitions from class path resource [applicationContext.xml]
+INFO -  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e2dae9: defining beans [he,ha,aobj,bobj]; root of factory hierarchy
+INFO -  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55571e: startup date [Thu Jul 19 10:05:28 IST 2012]; root of context hierarchy
+INFO -  Loading XML bean definitions from class path resource [applicationContext.xml]
+INFO -  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e2dae9: defining beans [he,ha,aobj,bobj]; root of factory hierarchy

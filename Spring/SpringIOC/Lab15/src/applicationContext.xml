@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+	<property name="customEditors">
+	<map>
+	<entry key="com.jlcindia.spring.ioc.StudentID">
+	<value>com.jlcindia.spring.ioc.StudentIDEditor</value>
+	</entry>
+	<entry key="com.jlcindia.spring.ioc.Fee">
+	<value>com.jlcindia.spring.ioc.FeeEditor</value>
+	</entry>
+	<entry key="java.util.List">
+	<value>com.jlcindia.spring.ioc.ListEditor</value>
+	</entry>
+	</map>
+	</property>
+	</bean>
+	
+	<bean id="student" class="com.jlcindia.spring.ioc.Student">
+	<property name="sid" value="B99-101"/>
+	<property name="sname" value="Saurabh"/>
+	<property name="phone" value="9999"/>
+	<property name="fee" value="10000,15000,20000"/>
+	<property name="emails" value="s@jlc,sa@jlc,sau@jlc,saur@jlc"/>
+	<property name="phones">
+	<list>
+	<value>1111</value>
+	<value>2222</value>
+	<value>3333</value>
+	</list>
+	</property>
+	</bean>
+</beans>

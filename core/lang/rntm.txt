@@ -1,0 +1,37 @@
+Compiled from "Runtime.java"
+public class java.lang.Runtime extends java.lang.Object{
+    public native int availableProcessors();
+    public native long freeMemory();
+    public native long maxMemory();
+    public native long totalMemory();
+    static {};
+    public native void gc();
+    public void runFinalization();
+    public void exit(int);
+    public void halt(int);
+    public static void runFinalizersOnExit(boolean);
+    public native void traceInstructions(boolean);
+    public native void traceMethodCalls(boolean);
+    public static java.lang.Runtime getRuntime();
+    public void load(java.lang.String);
+    public void loadLibrary(java.lang.String);
+    public void addShutdownHook(java.lang.Thread);
+    public boolean removeShutdownHook(java.lang.Thread);
+    public java.io.InputStream getLocalizedInputStream(java.io.InputStream);
+    public java.io.OutputStream getLocalizedOutputStream(java.io.OutputStream);
+    public java.lang.Process exec(java.lang.String);
+       throws java/io/IOException
+    public java.lang.Process exec(java.lang.String[]);
+       throws java/io/IOException
+    synchronized void load0(java.lang.Class,java.lang.String);
+    synchronized void loadLibrary0(java.lang.Class,java.lang.String);
+    public java.lang.Process exec(java.lang.String,java.lang.String[]);
+       throws java/io/IOException
+    public java.lang.Process exec(java.lang.String[],java.lang.String[]);
+       throws java/io/IOException
+    public java.lang.Process exec(java.lang.String,java.lang.String[],java.io.File);
+       throws java/io/IOException
+    public java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File);
+       throws java/io/IOException
+}
+

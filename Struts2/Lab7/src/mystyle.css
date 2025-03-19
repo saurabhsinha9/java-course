@@ -1,0 +1,30 @@
+
+body{
+font-family:Verdana,Arial,Helvetica,sans-serif;font-size:25px;
+}
+td{
+font-family:Verdana,Arial,Helvetica,sans-serif;font-size:25px;
+}
+a:link{
+font-family:Verdana,Arial,Helvetica,sans-serif;font-size:25px;	color: #3366cc;text-decoration: none;
+}
+a:active{
+font-family:Verdana,Arial,Helvetica,sans-serif;font-size:25px;	color: #3366cc;text-decoration: none;
+}
+
+a:visited{
+font-family:Verdana,Arial,Helvetica,sans-serif;font-size:25px;	color: #3366cc;text-decoration: none;
+}
+
+.boldred{
+color: #CB3216;
+font-size: 25px;
+}
+
+.errorMessage{
+color: #CB3216;
+font-size: 25px;
+}
+
+.smalltext{
+font-family: Verdana,Arial,Helvetica,sans-serif;;font-size: 11px;letter-spacing: 1;line-height: 1.5;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sd:schema xmlns:sd="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.jlc.com/courses" 
+  elementFormDefault="qualified">
+  <sd:element name="jlc">
+  <sd:complexType>
+  <sd:sequence>
+  <sd:element name="course">
+  <sd:complexType>
+  <sd:sequence>
+  <sd:element name="name" type="sd:string"/>
+  <sd:element name="cost" type="sd:long"/>
+  </sd:sequence>
+  </sd:complexType>
+  </sd:element>
+  </sd:sequence>
+  </sd:complexType>
+</sd:schema>

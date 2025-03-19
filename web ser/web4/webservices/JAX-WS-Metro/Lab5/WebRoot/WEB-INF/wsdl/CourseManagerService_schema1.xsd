@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://jaxws.jlcindia.com/" targetNamespace="http://jaxws.jlcindia.com/" version="1.0">
+
+  <xs:element name="getAllCourses" type="tns:getAllCourses"/>
+
+  <xs:element name="getAllCoursesResponse" type="tns:getAllCoursesResponse"/>
+
+  <xs:complexType name="getAllCourses">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAllCoursesResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:courseTO"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="courseTO">
+    <xs:sequence>
+      <xs:element name="cid" type="xs:int"/>
+      <xs:element minOccurs="0" name="cname" type="xs:string"/>
+      <xs:element name="cost" type="xs:double"/>
+      <xs:element minOccurs="0" name="faculty" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "books.dtd" >
+<books>
+  <book bid="100" free="yes">
+    <bname>ANSI C</bname>
+    <authorName>E BALAGURUSAMY</authorName>
+    <pub>TMH</pub>
+    <isbn>ANSI-1234</isbn>
+  </book>
+  <book bid="100" free="yes">
+    <bname>ANSI C</bname>
+    <authorName>E BALAGURUSAMY</authorName>
+    <authorName>E BALAGURUSAMY</authorName>
+    <authorName>E BALAGURUSAMY</authorName>
+    <authorName>E BALAGURUSAMY</authorName>
+    <pub>TMH</pub>
+    <isbn>ANSI-1234</isbn>
+  </book>
+  <author aid="A-101">
+    <name>E BALAGURUSAMY</name>
+    <qualification>M.E</qualification>
+    <company>&comp;</company>
+  </author>
+  <author aid="A-101">
+    <name>E BALAGURUSAMY</name>
+    <qualification>M.E</qualification>
+    <company>&comp;</company>
+  </author>
+</books>

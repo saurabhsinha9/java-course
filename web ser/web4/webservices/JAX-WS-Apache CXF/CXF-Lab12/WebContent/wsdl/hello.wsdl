@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="HelloService" targetNamespace="http://cxf.jlcindia.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://cxf.jlcindia.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://cxf.jlcindia.com/" schemaLocation="hello_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="getMessageResponse">
+    <wsdl:part name="parameters" element="tns:getMessageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMessage">
+    <wsdl:part name="parameters" element="tns:getMessage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Hello">
+    <wsdl:operation name="getMessage">
+      <wsdl:input name="getMessage" message="tns:getMessage">
+    </wsdl:input>
+      <wsdl:output name="getMessageResponse" message="tns:getMessageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloServiceSoapBinding" type="tns:Hello">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMessage">
+      <soap:operation soapAction="urn:GetMessage" style="document"/>
+      <wsdl:input name="getMessage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMessageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloService">
+    <wsdl:port name="HelloPort" binding="tns:HelloServiceSoapBinding">
+      <soap:address location="http://localhost:9999/CXF-Lab12/services/HelloPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

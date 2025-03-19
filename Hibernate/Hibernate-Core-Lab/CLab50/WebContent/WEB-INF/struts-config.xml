@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+<data-sources/>
+  <form-beans>
+		<form-bean  name="tmpForm" type="org.apache.struts.action.DynaActionForm" >
+		<form-property name="batchId" type="java.lang.String"/>
+		</form-bean>
+		<form-bean  name="bidForm" type="org.apache.struts.validator.DynaValidatorForm" >
+		<form-property name="batchId" type="java.lang.String"/>
+		</form-bean>
+		<form-bean  name="sidForm" type="org.apache.struts.validator.DynaValidatorForm" >
+		<form-property name="studentId" type="java.lang.String"/>
+		</form-bean>
+		
+		<form-bean  name="studentForm" type="org.apache.struts.validator.DynaValidatorForm" >
+		<form-property name="studentId" type="java.lang.String"/>
+		<form-property name="batchId" type="java.lang.String"/>
+		<form-property name="firstName" type="java.lang.String"/>
+		<form-property name="lastName" type="java.lang.String"/>
+		<form-property name="email" type="java.lang.String"/>
+		<form-property name="phone" type="java.lang.String"/>
+		<form-property name="gender" type="java.lang.String"/>
+		<form-property name="qualification" type="java.lang.String"/>
+		<form-property name="totalFee" type="java.lang.String"/>
+		<form-property name="feePaid" type="java.lang.String"/>
+		<form-property name="feeBal" type="java.lang.String"/>
+		<form-property name="status" type="java.lang.String"/>
+		
+		</form-bean>
+	</form-beans>
+	<global-exceptions/>
+	<global-forwards>
+		<forward name="searchForward" path="/searchAction.do?method=displayBatches"/>
+		<forward name="Next" path="/nextAction.do?method=nextStudents"/>
+		<forward name="Previous" path="/previousAction.do?method=previousStudents"/>
+		<forward name="searchHome" path="/searchHome.jsp"/>	
+	</global-forwards>
+	<action-mappings>
+		<action path="/searchAction" 
+				name="tmpForm"
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"/> 
+		<action path="/BidSubmit"
+				name="bidForm"		
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"
+				scope="session"
+				validate="true"
+				input="/searchHome.jsp"/>
+		
+		<action path="/nextAction"
+				name="tmpForm"		
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"
+				scope="session"
+				validate="true"
+				input="/searchHome.jsp"/>
+		<action path="/previousAction"
+				name="tmpForm"		
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"
+				scope="session"
+				validate="true"
+				input="/searchHome.jsp"/>
+		
+		<action path="/sidSubmit"
+				name="sidForm"		
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"
+				scope="session"
+				validate="true"
+				input="/searchHome.jsp"/>
+				
+		<action path="/updateStudent"
+				name="studentForm"		
+				parameter="method"
+				type="com.jlcindia.struts.StudentAction"
+				scope="session"
+				validate="true"
+				input="/searchHome.jsp"/>
+	</action-mappings>
+	<message-resources parameter="com.jlcindia.struts.ApplicationResources"/>
+</struts-config>
+

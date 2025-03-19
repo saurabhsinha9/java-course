@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="bidSearchForm" 
+				   type="com.jlcindia.struts1.BidSearchForm" />
+	</form-beans>
+
+	<action-mappings>
+		<action path="/BidSubmit" 
+				name="bidSearchForm"
+				type="com.jlcindia.struts1.BidSearchAction" 
+				scope="session" 
+				validate="true"
+				input="/bidsearch.jsp">
+				
+			<exception type="com.jlcindia.struts1.BatchIDNotFoundException"
+				path="/bidsearch.jsp" key="errors.bidsearch.bid.notfound" />
+			
+			<forward name="bidsearch" path="/bidsearch.jsp" />
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="com.jlcindia.struts1.ApplicationResources" />
+	
+</struts-config>
+

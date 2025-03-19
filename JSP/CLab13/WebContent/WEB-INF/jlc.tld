@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+   <tlib-version>1.0</tlib-version>
+   <jspversion>1.1</jspversion>
+    <short-name>JLC Custom Tags</short-name>
+    
+    <uri>/WEB-INF/jlc.tld</uri>
+    
+    <tag>
+	    <name>hello</name>
+		<tag-class>com.jlcindia.jsp.ctags.HelloTag</tag-class>
+		<body-content>empty</body-content>
+        <attribute>
+            <name>sname</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+	 	</attribute>
+    
+		<attribute>
+		    <name>email</name>
+		    <required>false</required>
+		    <rtexprvalue>true</rtexprvalue>
+		</attribute>
+    </tag>
+   
+</taglib>
+

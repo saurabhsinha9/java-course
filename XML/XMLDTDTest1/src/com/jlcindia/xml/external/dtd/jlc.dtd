@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!ELEMENT jlc (student,course+)>
+<!ELEMENT student (sname,email+,phone?)>
+<!ELEMENT course (cname,cost,company)>
+<!ATTLIST student sid CDATA #REQUIRED
+           bid CDATA #IMPLIED>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST course cid CDATA #REQUIRED>
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ENTITY comp "Java Learning Center">

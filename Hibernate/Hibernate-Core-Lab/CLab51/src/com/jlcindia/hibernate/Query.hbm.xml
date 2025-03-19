@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Query" table="query">
+<id name="queryId" type="int" column="queryId">
+<generator class="increment"/>
+</id>
+<property name="subject"/>
+<property name="author"/>
+<property name="catName"/>
+<property name="postDate"/>
+<property name="description"/>
+</class>
+</hibernate-mapping>

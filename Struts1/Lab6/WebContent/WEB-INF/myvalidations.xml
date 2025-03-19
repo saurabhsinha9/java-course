@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0.1//EN" "validator_1_0_1.dtd" >
+<form-validation>
+	<formset>
+		<form name ="regForm">
+
+			<field property="phone" depends="long">
+				<arg0 key="Phone" resource="false" />
+			</field>
+				
+				<field property="fee" depends="double">
+				<arg0 key="Fee" resource="false" />
+			</field>
+				
+			<field property="sid" depends="required,sidformat">
+				<arg0 key="SID" resource="false" />
+			</field>
+			
+			<field property="username" depends="required,minlength,maxlength">
+				<arg0 key="Username" resource="false" />	
+				<arg1 key="${var:minlength}" resource="false" />
+				<arg2 key="${var:maxlength}" resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>5</var-value>
+				</var>
+
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>10</var-value>
+				</var>
+			</field>
+
+			<field property="password" depends="required,minlength,maxlength">
+				<arg0 key="Password" resource="false" />
+				<arg1 key="${var:minlength}" resource="false" />
+				<arg2 key="${var.:maxlength}" resource="false" />
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>4</var-value>
+				</var>
+
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			
+			<field property="email" depends="required,email">
+				<arg0 key="Email ID" resource="false" />
+			</field>
+			
+			<field property="dob" depends="required,date">
+				<arg0 key="DOB" resource="false" />
+				<arg1 key="${var:datePattern}" resource="false" />				
+				
+			<var>
+				<var-name>datePattern</var-name>
+				<var-value>dd/MM/yyyy</var-value>
+			</var>				
+			</field>
+			
+			
+			
+			<field property="course" depends="coursesRequired">
+			<arg0 key="Course" resource="false" />
+			</field>
+			
+			
+		</form>
+	</formset>
+</form-validation>

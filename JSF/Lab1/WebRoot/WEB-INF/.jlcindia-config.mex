@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/login.jsp" location="30,30" dimension="94,36" />
+  <JSFFlowResource path="/home.jsp" location="180,30" dimension="98,36" />
+  <JSFFlowNavigationCase id="/login.jsp,/login.jsp,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="77,30" />
+      <AbsolutePoint location="77,-7" />
+      <AbsolutePoint location="161,-7" />
+      <AbsolutePoint location="161,33" />
+      <AbsolutePoint location="124,33" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/login.jsp,/home.jsp,success,&lt;empty&gt;" routingType="1">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="124,48" />
+      <AbsolutePoint location="180,48" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+

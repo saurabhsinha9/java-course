@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+<local-tx-datasource>
+<jndi-name>MySQLDataSourceJNDI</jndi-name>
+<connection-url>jdbc:mysql://localhost/b27db</connection-url>
+<driver-class>com.mysql.jdbc.Driver</driver-class>
+<use-java-context>false</use-java-context>
+<user-name>root</user-name>
+<password>jlcindia</password>
+<min-pool-size>5</min-pool-size>
+<max-pool-size>20</max-pool-size>
+<idle-timeout-minutes>1</idle-timeout-minutes>
+</local-tx-datasource>
+</datasources>

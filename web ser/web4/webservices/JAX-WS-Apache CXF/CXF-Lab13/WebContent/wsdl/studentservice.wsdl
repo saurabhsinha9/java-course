@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="StudentServiceService" targetNamespace="http://cxf.jlcindia.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://cxf.jlcindia.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://cxf.jlcindia.com/" schemaLocation="studentservice_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="addStudent">
+    <wsdl:part name="parameters" element="tns:addStudent">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addStudentResponse">
+    <wsdl:part name="parameters" element="tns:addStudentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getStudent">
+    <wsdl:part name="parameters" element="tns:getStudent">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getStudentResponse">
+    <wsdl:part name="parameters" element="tns:getStudentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="StudentService">
+    <wsdl:operation name="getStudent">
+      <wsdl:input name="getStudent" message="tns:getStudent">
+    </wsdl:input>
+      <wsdl:output name="getStudentResponse" message="tns:getStudentResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudent">
+      <wsdl:input name="addStudent" message="tns:addStudent">
+    </wsdl:input>
+      <wsdl:output name="addStudentResponse" message="tns:addStudentResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StudentServiceServiceSoapBinding" type="tns:StudentService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getStudent">
+      <soap:operation soapAction="urn:GetStudent" style="document"/>
+      <wsdl:input name="getStudent">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getStudentResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudent">
+      <soap:operation soapAction="urn:AddStudent" style="document"/>
+      <wsdl:input name="addStudent">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addStudentResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StudentServiceService">
+    <wsdl:port name="StudentServicePort" binding="tns:StudentServiceServiceSoapBinding">
+      <soap:address location="http://localhost:9999/CXF-Lab13/services/StudentServicePort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

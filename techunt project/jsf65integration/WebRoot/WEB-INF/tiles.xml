@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" >
+
+<tiles-definitions>
+<definition name="BaseDef1" path="/CONSONALayout1.jsp">
+<put name="HEADER" value="header.jsp"/>
+<put name="BODY" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+</definition>
+
+<definition name="BaseDef2" path="/CONSONALayout2.jsp">
+<put name="HEADER" value="header.jsp"/>
+<put name="MENU" value="menuBar.jsp"/>
+<put name="Body" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+</definition>
+
+<definition name="LoginDef" extends="BaseDef1">
+<put name="BODY" value="login.jsp"/>
+</definition>
+
+<definition name="HomeDef" extends="BaseDef2">
+<put name="BODY" value="welcome.jsp"/>
+</definition>
+
+<definition name="ShowBalDef" extends="BaseDef2">
+<put name="BODY" value="showbal.jsp"/>
+</definition>
+
+<definition name="ShowFTDef" extends="BaseDef2">
+<put name="BODY" value="showftform.jsp"/>
+</definition>
+
+<definition name="ShowFTSuccessDef" extends="BaseDef2">
+<put name="BODY" value="showftsuccess.jsp"/>
+</definition>
+
+<definition name="ShowUpdateCustDef" extends="BaseDef2">
+<put name="BODY" value="updatecustomer.jsp"/>
+</definition>
+
+<definition name="ShowUpdateCustSuccessDef" extends="BaseDef2">
+<put name="BODY" value="updatesuccess.jsp"/>
+</definition>
+
+</tiles-definitions>

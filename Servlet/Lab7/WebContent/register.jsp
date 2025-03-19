@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>No.1 Online Bookstore</title>
+</head>
+<body>
+<center>
+<h1>JLC Bookstore</h1>
+<h3>Customer Registration Form</h3>
+<form action="register.jlc">
+<table bgcolor="#c3d599">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="fname"/></td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lname"/></td>
+</tr>
+
+<tr>
+<td>Email Id</td>
+<td><input type="text" name="email"/></td>
+</tr>
+
+<tr>
+<td>Phone No</td>
+<td><input type="text" name="phone" value=""/></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value="Male"/>Male
+<input type="radio" name="gender" value="Female"/>Female</td>
+</tr>
+
+<tr>
+<td>Card Type</td>
+<td><select name="ctype">
+<option value="Visa">Visa</option>
+<option value="Master">Master</option>
+<option value="Amex">Amex</option>
+<option value="Gold">Gold</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Card Number</td>
+<td><input type="text" name="cnum"/></td>
+</tr>
+
+<tr>
+<td>Favourite Color</td>
+<td><input type="checkbox" name="color" value="Red"/>Red
+<input type="checkbox" name="color" value="Blue"/>Blue
+<input type="checkbox" name="color" value="Green"/>Green</td>
+</tr>
+
+<tr>
+<td>UserName</td>
+<td><input type="text" name="uname"/></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" name="pword"/></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Register Now"/></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

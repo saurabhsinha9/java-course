@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shiporder orderid="101" xmlns="http://jlcindia.com/shiporder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jlcindia.com/shiporder shiporder.xsd ">
+  <orderperson>Saurabh</orderperson>
+  <shipto>
+    <name>saurabh</name>
+    <address>mathikere</address>
+    <city>Bang</city>
+    <country>india</country>
+  </shipto>
+  <item>
+    <title>title</title>
+    <quantity>1</quantity>
+    <price>0.0</price>
+  </item>
+</shiporder>

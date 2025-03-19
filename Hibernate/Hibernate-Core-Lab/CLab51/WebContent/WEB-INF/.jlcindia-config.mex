@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/loginHome.jsp" location="30,30" dimension="115,36" />
+  <JSFFlowResource path="/JLCHome.jsp" location="330,30" dimension="110,36" />
+  <JSFFlowResource path="/signupHome.jsp" location="30,130" dimension="124,36" />
+  <JSFFlowResource path="/postQueryHome.jsp" location="330,130" dimension="144,36" />
+  <JSFFlowNavigationCase id="/loginHome.jsp,/JLCHome.jsp,success,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="145,48" />
+      <AbsolutePoint location="330,48" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/loginHome.jsp,/loginHome.jsp,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="87,30" />
+      <AbsolutePoint location="87,-7" />
+      <AbsolutePoint location="242,-7" />
+      <AbsolutePoint location="242,33" />
+      <AbsolutePoint location="145,33" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/signupHome.jsp,/JLCHome.jsp,success,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="77,130" />
+      <AbsolutePoint location="77,73" />
+      <AbsolutePoint location="385,73" />
+      <AbsolutePoint location="385,66" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/signupHome.jsp,/signupHome.jsp,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="92,130" />
+      <AbsolutePoint location="92,103" />
+      <AbsolutePoint location="191,103" />
+      <AbsolutePoint location="191,133" />
+      <AbsolutePoint location="154,133" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/postQueryHome.jsp,/JLCHome.jsp,success,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="370,130" />
+      <AbsolutePoint location="370,66" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/postQueryHome.jsp,/postQueryHome.jsp,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="398,130" />
+      <AbsolutePoint location="398,118" />
+      <AbsolutePoint location="511,118" />
+      <AbsolutePoint location="511,148" />
+      <AbsolutePoint location="474,148" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+

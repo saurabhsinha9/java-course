@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ejb-jar PUBLIC '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN' 'http://java.sun.com/dtd/ejb-jar_2_0.dtd'>
+<ejb-jar>
+<enterprise-beans>
+<message-driven>
+<ejb-name>MailManagerEJB</ejb-name>
+<ejb-class>com.jlcindia.bookstore.mdb.MailManagerBean</ejb-class>
+<transaction-type>Container</transaction-type>
+<message-driven-destination>
+<destination-type>javax.jms.Topic</destination-type>
+</message-driven-destination>
+</message-driven>
+
+<message-driven>
+<ejb-name>RequestManagerEJB</ejb-name>
+<ejb-class>com.jlcindia.bookstore.mdb.RequestManagerBean</ejb-class>
+<transaction-type>Container</transaction-type>
+<message-driven-destination>
+<destination-type>javax.jms.Topic</destination-type>
+</message-driven-destination>
+</message-driven>
+</enterprise-beans>
+<assembly-descriptor>
+</assembly-descriptor>
+</ejb-jar>

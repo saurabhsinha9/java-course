@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT books (book*,author+)>
+<!ELEMENT book (bname,authorName+,pub,isbn)>
+<!ELEMENT author (name,qualification,company)>
+<!ATTLIST book bid CDATA #REQUIRED
+           free CDATA #IMPLIED >
+<!ATTLIST author aid CDATA #REQUIRED>
+<!ELEMENT bname (#PCDATA)>
+<!ELEMENT authorName (#PCDATA)>
+<!ELEMENT pub (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ENTITY comp "Java Learning Center">

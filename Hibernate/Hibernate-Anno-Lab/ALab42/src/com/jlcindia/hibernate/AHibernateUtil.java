@@ -1,0 +1,22 @@
+package com.jlcindia.hibernate;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+
+public class AHibernateUtil {
+static SessionFactory factory;
+static{
+	try {
+		AnnotationConfiguration acfg=new AnnotationConfiguration();
+		
+		acfg=(AnnotationConfiguration) acfg.configure();
+		factory=acfg.buildSessionFactory();
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+}
+public static SessionFactory getSessionFactory(){
+	return factory;
+}
+}

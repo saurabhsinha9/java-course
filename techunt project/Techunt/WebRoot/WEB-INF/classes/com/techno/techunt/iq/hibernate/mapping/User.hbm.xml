@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.techno.techunt.iq.hibernate.pc">
+<class name="User" table="USER_TABLE">
+<id name="serialNo" column="SERIAL_NO" type="long">
+<generator class="increment"/>
+</id>
+
+<property name="branchname" column="BRANCH_NAME"/>
+<property name="batchid" column="BATCH_ID"/>
+<property name="studentid" column="STUDENT_ID"/>
+<property name="studname" column="STUD_NAME"/>
+<property name="email" column="EMAIL"/>
+<property name="phone" column="PHONE" type="long"/>
+<property name="username" column="USERNAME"/>
+<property name="password" column="PASSWORD"/>
+<property name="status" column="STATUS"/>
+<property name="role" column="ROLE"/>
+<property name="numberofquestion" column="NUMBER_OF_QUESTION"/>
+</class>
+</hibernate-mapping>
+
+

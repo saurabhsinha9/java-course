@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+function f1(){
+	var dx=document.getElementById("x");
+	dx.innerHTML="<h1>Hello Guys</h1>";
+}
+
+function f2(){
+	var dx=document.getElementById("x");
+	dx.innerHTML="what Happen?";
+}
+
+function show(){
+	var arr=new Array(1);
+	arr[0]=10;
+	arr[1]=9.9;
+	arr[2]="JLC";
+	arr[3]=true;
+	arr[9]=99;
+	for(var x in arr){
+		document.write(x);
+		document.write("<br/>")
+	}
+}
+</script>
+</head>
+<body>
+<h1>
+<script type="text/javascript">
+document.write("<h1>Hai Guys</h1>");
+</script>
+<input type="text" onfocus="f1();" onblur="f2();"/>
+<input type="radio" onclick="f1();">Click Here.&nbsp;
+<input type="radio" onmouseover="f1()">Click Here.&nbsp;
+<input type="radio">Click Here.
+</h1>
+<hr/>
+<div id="x"> </div>
+<hr/>
+<input type="button" value="Show Array" onmouseover="show();"/>
+</body>
+</html>

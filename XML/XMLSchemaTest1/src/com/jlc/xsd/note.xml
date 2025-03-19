@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:note xmlns:p="http://jlcindia.com" 
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			 xsi:schemaLocation="http://jlcindia.com note.xsd ">
+  <p:to>Dablu</p:to>
+  <p:from>Saurabh</p:from>
+  <p:heading>Greeting</p:heading>
+  <p:body>Hi, Wish u a very Good Morning</p:body>
+  <p:color>gold</p:color>
+  <p:color1>green</p:color1>
+</p:note>

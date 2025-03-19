@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books>
+<book bid="B-101">
+<bname>Master Java</bname>
+<authors>
+<author>Saurabh</author>
+<author>Dablu</author>
+</authors>
+<cost>999.99</cost>
+</book>
+<book bid="B-102">
+<bname>Beginner Java</bname>
+<authors>
+<author>Saurabh</author>
+<author>Dablu</author>
+</authors>
+<cost>333.33</cost>
+</book>
+</books>

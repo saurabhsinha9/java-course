@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bookstore.dao">
+<class name="Book" table="jlcbooks">
+<id name="bookId" column="bookId" type="int">
+<generator class="increment"/>
+</id>
+<property name="bookName"/>
+<property name="author" />
+<property name="pub"/>
+<property name="isbn" />
+<property name="cost" type="double"/>
+<property name="cat" type="string"/>
+<property name="qty" type="int"/>
+</class>
+</hibernate-mapping>

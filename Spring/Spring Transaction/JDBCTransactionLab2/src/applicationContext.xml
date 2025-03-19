@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+<context:annotation-config/>
+
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	<property name="url" value="jdbc:mysql://localhost/jlcindiadb"/>
+	<property name="username" value="root"/>
+	<property name="password" value="jlcindia"/>
+	</bean>
+	<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" autowire="constructor"/>
+	<bean id="simpleJdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate" autowire="constructor"/>
+	<bean id="accountDAO" class="com.jlcindia.spring.transaction.jdbc.JdbcAccountDAO"/>
+	<bean id="accountServiceTarget" class="com.jlcindia.spring.transaction.jdbc.AccountServiceImpl"/>
+	
+	<!-- configuration related to Proxy Factory Bean -->
+	<bean id="transactionAttributeSource" class="org.springframework.transaction.interceptor.MatchAlwaysTransactionAttributeSource"/>
+	
+	<bean id="accountServiceProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+	<property name="transactionManager">
+	<ref local="dataSourceTransactionManager"/>
+	</property>
+	<property name="target">
+	<ref local="accountServiceTarget"/>
+	</property>
+	<property name="transactionAttributes">
+	<props>
+	<prop key="addAccount*">PROPAGATION_REQUIRED</prop>
+	<prop key="deposit*">PROPAGATION_REQUIRED</prop>
+	<prop key="withdraw*">PROPAGATION_REQUIRED</prop>
+	<prop key="transferFunds*">PROPAGATION_REQUIRES_NEW</prop>
+	</props>
+	</property>
+	</bean>
+	
+</beans>

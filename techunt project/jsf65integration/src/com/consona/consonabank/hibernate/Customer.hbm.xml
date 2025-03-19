@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.consona.consonabank.hibernate">
+<class name="Customer" table="customers">
+<id name="cid" column="cid" type="int">
+<generator class="increment"/>
+</id>
+<property name="cname" column="cname" type="string"/>
+<property name="email" column="email" type="string"/>
+<property name="phone" column="phone" type="long"/>
+<property name="city" column="city" type="string"/>
+<property name="username" type="string"/>
+<property name="password"  type="string"/>
+<many-to-one name="account" column="accno" unique="true" not-null="true" lazy="false"/>
+
+
+</class>
+</hibernate-mapping>
+

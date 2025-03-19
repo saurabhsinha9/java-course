@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	 http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+<context:annotation-config/>
+<aop:aspectj-autoproxy/>
+
+
+<bean id="ss" class="com.jlcindia.spring.aop.SecurityService"/>
+<bean id="ls" class="com.jlcindia.spring.aop.LogService"/>
+<bean id="ts" class="com.jlcindia.spring.aop.TxService"/>
+
+
+<bean id="mba" class="com.jlcindia.spring.aop.JLCMBAdvice"/>
+<bean id="mra" class="com.jlcindia.spring.aop.JLCMRAdvice"/>
+<bean id="mta" class="com.jlcindia.spring.aop.JLCMTAdvice"/>
+
+
+<bean id="asTarget" class="com.jlcindia.spring.aop.AccountService"/>
+<bean id="csTarget" class="com.jlcindia.spring.aop.CustomerServiceIMPL"/>
+
+<bean id="PC1" class="org.springframework.aop.aspectj.AspectJExpressionPointcut">
+<property name="expression" value="execution(*
+com.jlcindia.spring.aop.AccountService.my*(..))"/>
+</bean>
+
+
+
+<bean name="MBAdvisor1" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mba"/>
+<property name="pointcut" ref="PC1"/>
+</bean>
+
+<bean name="MRAdvisor1" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mra"/>
+<property name="pointcut" ref="PC1"/>
+</bean>
+
+<bean name="MTAdvisor1" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mta"/>
+<property name="pointcut" ref="PC1"/>
+</bean>
+
+
+<!--
+<bean id="asProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="targetClass" value="com.jlcindia.spring.aop.AccountService"/>
+<property name="target" ref="asTarget"/>
+<property name="interceptorNames">
+<list>
+<value>MBAdvisor1</value>
+<value>MRAdvisor1</value>
+<value>MTAdvisor1</value>
+</list>
+</property>
+</bean>
+-->
+
+<bean id="PC2" class="org.springframework.aop.aspectj.AspectJExpressionPointcut">
+<property name="expression" value="execution(*
+com.jlcindia.spring.aop.CustomerService.update*(..))"/>
+</bean>
+
+<bean name="MBAdvisor2" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mba"/>
+<property name="pointcut" ref="PC2"/>
+</bean>
+
+<bean name="MRAdvisor2" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mra"/>
+<property name="pointcut" ref="PC2"/>
+</bean>
+<bean name="MTAdvisor2" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+<property name="advice" ref="mta"/>
+<property name="pointcut" ref="PC2"/>
+</bean>
+<!--
+<bean id="csProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="proxyInterfaces" value="com.jlcindia.spring.aop.CustomerService"/>
+<property name="target" ref="csTarget"/>
+<property name="interceptorNames">
+<list>
+<value>MBAdvisor2</value>
+<value>MRAdvisor2</value>
+<value>MTAdvisor</value>
+</list>
+</property>
+</bean>
+-->
+</beans>

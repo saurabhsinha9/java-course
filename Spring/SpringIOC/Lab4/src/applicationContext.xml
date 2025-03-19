@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	
+	
+	<bean id="ha1" class="com.jlcindia.spring3.ioc.Hai">
+	<property name="msg" value="Welcome to JLC Spring3"/>
+	<property name="no" value="99"/>
+	</bean>
+	<!-- 
+	<bean id="ha2" class="com.jlcindia.spring3.ioc.Hai">
+	<property name="msg" value="Welcome to JLC Spring3"/>
+	<property name="no" value="99"/>
+	</bean>
+	 -->
+	<bean id="aobj" class="com.jlcindia.spring3.ioc.A">
+	<property name="msg" value="Welcome to JLC Spring3"/>
+	</bean>
+	
+	<bean id="hello" class="com.jlcindia.spring3.ioc.Hello" autowire="byType"/>
+	
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	
+	
+	
+	<bean id="he" class="com.jlcindia.spring3.ioc.Hello" lazy-init="true">
+	<constructor-arg name="x" value="99"/>
+	</bean>
+	
+	<bean id="ha" class="com.jlcindia.spring3.ioc.Hai" lazy-init="false">
+	<property name="str" value="Hai Guys"/>
+	</bean>
+	<!-- 
+	case2. Hai will be loaded at container startup
+	 -->
+	
+	
+	<!--  <bean id="aobj" class="com.jlcindia.spring3.ioc.A">
+	<property name="hello" ref="he"/>
+	<property name="hai" ref="ha"/>
+	</bean>
+	<bean id="bobj" class="com.jlcindia.spring3.ioc.B">
+	<constructor-arg name="hello" ref="he"/>
+	<constructor-arg name="hai" ref="ha"/>
+	</bean>  -->
+</beans>

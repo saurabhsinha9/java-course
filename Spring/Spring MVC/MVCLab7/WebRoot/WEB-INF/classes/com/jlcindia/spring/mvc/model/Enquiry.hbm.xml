@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.spring.mvc.model">
+<class name="Enquiry" table="enquiry_table">
+<id name="enquiryID" type="string">
+<generator class="com.jlcindia.spring.mvc.model.EnquiryIdGenerator"/>
+</id>
+<property name="name"/>
+<property name="email"/>
+<property name="phone"/>
+<property name="enquiryType"/>
+<property name="gender"/>
+<property name="aboutJLC"/>
+<property name="remarks"/>
+<array name="timings" table="enquiry_timings_table">
+<key column="enquiryID"/>
+<index/>
+<element column="timings" type="string"/>
+</array>
+</class>
+</hibernate-mapping>

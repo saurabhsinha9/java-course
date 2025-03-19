@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	
+xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+		
+	<context:annotation-config/>
+	<context:component-scan base-package="com.consona.consonabank.mvc"/>
+	<tx:annotation-driven transaction-manager="txManager"/>
+	
+	<bean id="tilesConfigurer"
+	class="org.springframework.web.servlet.view.tiles.TilesConfigurer">
+	
+	<property name="definitions">
+	<list>
+	<value>/WEB-INF/tiles.xml</value>
+	</list>
+	</property>
+	
+	</bean>
+
+<bean id="viewResolver"
+  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+  <property name="viewClass"
+  value="org.springframework.web.servlet.view.tiles.TilesJstlView"/>
+    </bean>
+
+
+
+
+<bean id="sessionFactory"
+	class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<property name="dataSource" ref="dataSource"/>
+<property name="mappingResources">
+<list>
+<value>com/consona/consonabank/hibernate/Account.hbm.xml</value>
+<value>com/consona/consonabank/hibernate/Customer.hbm.xml</value>
+
+</list>
+</property>
+
+<property name="hibernateProperties">
+<props>
+<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+<prop key="hibernate.show_sql">true</prop>
+<prop key="hibernate.hbm2ddl.auto">update</prop>
+
+</props>
+</property>
+</bean>
+
+<bean id="htemp1" class="org.springframework.orm.hibernate3.HibernateTemplate" autowire="byName"/>
+<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager" autowire="byName"/>
+
+
+
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost/consonabankdb"/>
+<property name="username" value="root"/>
+<property name="password" value="raj"/>
+</bean>
+
+<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+<property name="basename" value="messages"/>
+</bean>
+
+<bean id="adao" class="com.consona.consonabank.dao.HibernateAccountDAO"/>
+<bean id="accService" class="com.consona.consonabank.services.AccountServiceImpl"/>
+	
+<bean id="cdao" class="com.consona.consonabank.dao.HibernateCustomerDAO"/>
+<bean id="custService" class="com.consona.consonabank.services.CustomerServiceImpl"/>
+
+<bean id="userBean" class="com.consona.consonabank.mvc.User"/>
+<bean id="accountBean" class="com.consona.consonabank.mvc.AccountBean"/>
+<bean id="customerBean" class="com.consona.consonabank.mvc.CustomerBean"/>
+
+<bean id="userValidator" class="com.consona.consonabank.mvc.UserValidator"/>
+
+
+
+
+
+</beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.bean" default-lazy="false">
+<class name="Book" table="books">
+<id name="bookId" column="bookId" type="int">
+<generator class="increment"/>
+</id>
+<property name="bookName"/>
+<property name="price" type="double"/>
+<property name="pub"/>
+<property name="isbn"/>
+<set name="authors" table="authors_books">
+<key column="bookId"/>
+<many-to-many class="Author" column="userId"/>
+</set>
+</class>
+</hibernate-mapping>

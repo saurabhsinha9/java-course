@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Lab14</display-name>
+  <welcome-file-list>
+    <welcome-file>test.html</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>FB</filter-name>
+    <filter-class>com.jlcindia.filters.FilterB</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FB</filter-name>
+    <url-pattern>/a.jlc</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>FC</filter-name>
+    <filter-class>com.jlcindia.filters.FilterC</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FC</filter-name>
+    <url-pattern>/a.jlc</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>FA</filter-name>
+    <filter-class>com.jlcindia.filters.FilterA</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FA</filter-name>
+    <url-pattern>/a.jlc</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>A</servlet-name>
+    <servlet-class>com.jlcindia.servlets.ServletA</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A</servlet-name>
+    <url-pattern>/a.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>B</servlet-name>
+    <servlet-class>com.jlcindia.servlets.ServletB</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>B</servlet-name>
+    <url-pattern>/b.jlc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>C</servlet-name>
+    <servlet-class>com.jlcindia.servlets.ServletC</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>C</servlet-name>
+    <url-pattern>/c.jlc</url-pattern>
+  </servlet-mapping>
+</web-app>

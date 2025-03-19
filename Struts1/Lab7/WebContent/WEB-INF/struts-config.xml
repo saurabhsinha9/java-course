@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="bidSearchForm"
+					type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="bid" 
+						   type="java.lang.String" />
+		</form-bean>
+
+		<form-bean name="sidSearchForm"
+					   type="org.apache.struts.validator.DynaValidatorForm">
+				<form-property name="sid" 
+							   type="java.lang.String" />
+		</form-bean>
+	
+	</form-beans>
+  	
+  	<global-exceptions>
+			<exception type="com.jlcindia.struts1.BatchIDNotFoundException"
+					   path="/bidsearch.jsp" 
+					   key="errors.bid.notfound" />
+		</global-exceptions>
+
+		<global-forwards>
+			<forward name="bidsearch" path="/bidsearch.jsp" />
+			<forward name="sidsearch" path="/sidsearch.jsp" />
+		</global-forwards>
+
+
+		<action-mappings>
+			<action path="/BidSubmit" 
+					name="bidSearchForm"
+					type="com.jlcindia.struts1.BidSearchAction"
+					 scope="request" 
+					 input="/bidsearch.jsp" />
+
+			<action path="/SidSubmit" 
+					name="sidSearchForm"
+					type="com.jlcindia.struts1.SidSearchAction" 
+					scope="request" 
+					input="/sidsearch.jsp" />
+
+
+		</action-mappings>
+
+		<message-resources parameter="com.jlcindia.struts1.Application" />
+
+
+		<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+			<set-property property="pathnames"
+						  value="/WEB-INF/validator-rules.xml,
+							 /WEB-INF/myvalidations.xml" />
+
+		</plug-in>
+  
+  
+  
+</struts-config>
+

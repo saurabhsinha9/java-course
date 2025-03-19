@@ -1,0 +1,17 @@
+create table enquiry_table(
+enquiryID char(10) primary key,
+name char(30),
+email char(30),
+phone char(10),
+enquiryType char(15),
+gender char(10),
+aboutJLC char(15),
+remarks char(100));
+
+
+create table enquiry_timings_table(
+enquiryID char(10) references enquiry_table,
+idx int,
+timings char(30));
+
+insert into enquiry_table values ('E-1001','Saurabh','sau@jlc.com','1234567890','phone','male','google ads','ok ok');

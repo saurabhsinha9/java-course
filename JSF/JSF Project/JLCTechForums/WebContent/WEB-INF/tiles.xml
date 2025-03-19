@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" >
+
+<tiles-definitions>
+
+<definition name="BaseDef" path="/JLCLayout.jsp">
+	<put name="HEADER" value="header.jsp"/>
+	<put name="VMENU" value="vmenu.jsp"/>
+	<put name="BODY" value=""/>
+	<put name="FOOTER" value="footer.jsp"/>
+	</definition>
+	
+	<definition name="LoginHomeDef" path="/JLCLayout1.jsp">
+	<put name="HEADER" value="header.jsp"/>
+	<put name="BODY" value="login.jsp"/>
+	<put name="FOOTER" value="footer.jsp"/>
+	</definition>
+	
+	<definition name="BaseHomeDef" extends="BaseDef">
+	<put name="BODY" value="welcome.jsp"/>
+	</definition>
+	
+	<definition name="PostQueryHomeDef" extends="BaseDef">
+	<put name="BODY" value="postQuery.jsp"/>
+	</definition>
+	
+	<definition name="SignupHomeDef" extends="BaseDef">
+	<put name="BODY" value="signup.jsp"/>
+	</definition>
+	
+	<definition name="ViewQueryHomeDef" extends="BaseDef">
+	<put name="BODY" value="viewQueries.jsp"/>
+	</definition>
+
+</tiles-definitions>

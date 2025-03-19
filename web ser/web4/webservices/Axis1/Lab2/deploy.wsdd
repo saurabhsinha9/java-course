@@ -1,0 +1,11 @@
+<deployment xmlns="http://xml.apache.org/axis/wsdd/"
+   xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <service name="urn:StudentService" provider="java:RPC">
+   
+  <parameter name="className" value="org.jlcindia.axis.StudentService"/>
+  <parameter name="allowedMethods" value="*"/>
+  <beanMapping qname="urn:Student" 
+			xmlns:urn="http://www.jlcindia.com"
+		languageSpecificType="java:org.jlcindia.axis.Student"/>
+ </service>
+</deployment>

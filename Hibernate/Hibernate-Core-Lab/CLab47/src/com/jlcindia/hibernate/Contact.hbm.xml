@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.jlcindia.hibernate">
+<class name="Contact" table="contacts">
+<id name="contactId" column="contactId" type="int">
+<generator class="sequence">
+<param name="sequence">contactId_seq</param>
+</generator>
+</id>
+<property name="firstName" column="firstName" type="string"/>
+<property name="lastName" column="lastName"/>
+<property name="email"/>
+<property name="phone" type="long"/>
+<property name="dob"/>
+<property name="status"/>
+</class>
+<sql-query name="getAllJLCContacts_SP" callable="true">
+ <return class="com.jlcindia.hibernate.Contact">
+   <return-property name="contactId" column="CONTACTID" />
+   <return-property name="firstName" column="FIRSTNAME" />
+   <return-property name="lastName" column="LASTNAME" />
+   <return-property name="email" column="EMAIL" />
+   <return-property name="phone" column="PHONE" />
+   <return-property name="dob" column="DOB" />
+   <return-property name="status" column="STATUS" />
+ </return>
+  "{ ?= call getAllJLCContacts() }"
+ </sql-query>
+</hibernate-mapping>

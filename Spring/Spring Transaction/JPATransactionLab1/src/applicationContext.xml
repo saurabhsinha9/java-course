@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	 
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<context:annotation-config/>
+
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="JLCPU" />
+	</bean>
+	
+	<bean id="jpaTemp" class="org.springframework.orm.jpa.JpaTemplate" autowire="constructor"/>
+	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager" autowire="constructor"/>
+	   <bean id="accountDAO" class="com.jlcindia.spring.transaction.jpa.JpaAccountDAO"/>
+ <bean id="accountService" class="com.jlcindia.spring.transaction.jpa.AccountServiceImpl"/>
+ 
+	
+</beans>

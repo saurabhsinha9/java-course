@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+<session-factory>
+<property name="connection.datasource">MySQLDataSourceJNDI</property>
+<property name="jndi.class">weblogic.jndi.WLInitialContextFactory</property>
+<property name="jndi.url">t3://localhost:7001</property>
+<property name="connection.username">jlcindia</property>
+<property name="connection.password">jlcindia</property>
+<property name="transaction.factory_class">org.hibernate.transaction.JTATransactionFactory</property>
+<property name="transaction.manager_lookup_class">org.hibernate.transaction.WeblogicTransactionManagerLookup</property>
+<property name="jta.UserTransaction">java:comp/UserTransaction</property>
+<property name="hibernate.current_session_context_class">jta</property>
+
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="show_sql">true</property>
+<mapping resource="com/jlcindia/bookstore/dao/Order.hbm.xml"/>
+<mapping resource="com/jlcindia/bookstore/dao/OrderItem.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

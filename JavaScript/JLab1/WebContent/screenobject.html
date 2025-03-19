@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+function reloadPage(){
+	window.location.reload();
+}
+
+function currLocation(){
+	document.write('<h1>'+window.location);
+	document.write('<h1>'+window.location.href);
+	document.write('<h1>'+window.location.host);
+	document.write('<h1>'+window.location.hostname);
+	document.write('<h1>'+window.location.pathname);
+	document.write('<h1>'+window.location.port);
+	document.write('<h1>'+window.location.protocol);
+}
+
+function newLocation(){
+	window.location="http://www.jlcindia.com"
+}
+</script>
+</head>
+<body>
+<h3>My Screen:</h3>
+<script type="text/javascript">
+document.write("<p>Total Width"+screen.width);
+document.write("<p>Total Height"+screen.height);
+document.write("<p>Avail Width"+screen.availWidth);
+document.write("<p>Avail Height"+screen.availHeight);
+document.write("<p>Color Depth"+screen.colorDepth);
+document.write("<p>Color Resolution"+screen.pixelDepth);
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			   elementFormDefault="qualified">
+			   
+<xs:element name="City" type="xs:string"/>
+<xs:element name="Country" type="xs:string"/>	
+<xs:element name="State" type="xs:string"/>
+<xs:element name="Street" type="xs:string"/>	
+<xs:element name="Zip" type="xs:string"/>
+
+<xs:element name="Sid" type="xs:string"/>	
+<xs:element name="Sname" type="xs:string"/>
+<xs:element name="Email" type="xs:string"/>	
+<xs:element name="Phone"/>		   
+
+<xs:element name="Address">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Street"/>
+<xs:element ref="City"/>
+<xs:element ref="Zip"/>
+<xs:element ref="State"/>
+<xs:element ref="Country"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Student">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Sid"/>
+<xs:element ref="Sname"/>
+<xs:element ref="Email"/>
+<xs:element ref="Phone"/>
+<xs:element ref="Address"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Students">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Student" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jlc xmlns="http://www.jlc.com/jlc"
+	   xmlns:stu="http://www.jlc.com/students"
+	   xmlns:cou="http://www.jlc.com/courses"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://www.jlc.com/students jlc1.xsd http://www.jlc.com/courses jlc2.xsd">
+<stu:jlc>
+<stu:student></stu:student>
+<stu:course></stu:course>
+</stu:jlc>
+</jlc>
